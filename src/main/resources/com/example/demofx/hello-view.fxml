@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.VBox?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.RowConstraints?>
+<GridPane alignment="center" hgap="10" vgap="10" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demofx.HelloController">
+  <children>
+    <Pane prefHeight="1180.0" prefWidth="1920.0">
+      <children>
+        <Label layoutX="14.0" layoutY="14.0" prefHeight="17.0" prefWidth="123.0" text="Дебит продуваемой скважины по газу при заданных режимах" />
+        <Label layoutX="14.0" layoutY="39.0" text="Продолжительность продувки скважины при заданных режимах" />
+        <Label layoutX="14.0" layoutY="64.0" text="Количество продувок" />
+        <Label layoutX="14.0" layoutY="89.0" text="Количество скважин" />
+        <Label layoutX="14.0" layoutY="114.0" text="Количество стабильного конденсата полученного в результате дегазации н/с конденсата" />
+        <Label layoutX="14.0" layoutY="139.0" text="Газовый фактор, количество газа дегазации, выделяющегося при получение 1 m³ конденсата (результаты ГКИ)" />
+        <Label layoutX="14.0" layoutY="164.0" text="Общий объем сырьевого газа, подаваемого на УКПГ &quot;Алан&quot; " />
+        <Label layoutX="14.0" layoutY="189.0" text="Удельный объем воды, выделяемой из газа Мубарекского НГДУ (результаты ГКИ)" />
+        <Label layoutX="14.0" layoutY="214.0" text="Растворимость газа в дистиллированной воде при давлении, соответствующем давлению газа перед выветривателем " />
+        <Label layoutX="14.0" layoutY="239.0" text="Коэффициент Сеченова, определяемый по таблице D.2  NGH 39.2-66:2009" />
+        <Label layoutX="14.0" layoutY="264.0" text="Концентрация солей в воде (лабораторные исследования)" />
+        <Label layoutX="14.0" layoutY="289.0" text="Общий объем сырьевого газа, подаваемого на УКПГ &quot;Алан&quot; " />
+        <Label layoutX="14.0" layoutY="314.0" text="Удельное количество впрыскиваемого ДЭГ  (согласно техрегламенту)" />
+        <Label layoutX="14.0" layoutY="339.0" text="Рабочее давление" />
+        <Label layoutX="14.0" layoutY="364.0" text="Рабочая температура" />
+        <Label layoutX="14.0" layoutY="389.0" text="Концентрация ДЭГ" />
+        <Label layoutX="14.0" layoutY="414.0" text="Расход топливного газа на агрегаты ДКС-1 (показания по прибору)" />
+        <Label layoutX="14.0" layoutY="439.0" text="Расход топливного газа на работу БПГР ДКС (показания по прибору)" />
+        <Label layoutX="14.0" layoutY="464.0" text="Расход топливного газа огневыми регенераторами ДЭГ (показания по прибору)" />
+        <Label layoutX="14.0" layoutY="489.0" text="Расход топливного газа  на рабоу котельной ДКС (показания по прибору)" />
+        <Label layoutX="14.0" layoutY="514.0" text="Расход топливного газа  на рабоу котельной УКПГ (показания по прибору)" />
+        <Label layoutX="14.0" layoutY="539.0" text="Расход  газа  на факел при аварийном останове промысла ДКС (показания по прибору)" />
+        <Label layoutX="14.0" layoutY="564.0" text="Расход  газа  на факел при аварийном останове промысла УКПГ (показания по прибору)" />
+        <Label layoutX="14.0" layoutY="589.0" text="Запорно-регулирующая арматура (ЗРА)">
+          <font>
+            <Font name="System Bold" size="12.0" />
+          </font>
+        </Label>
+        <Label layoutX="14.0" layoutY="614.0" text="Утечка газа через неподвижные или подвижные соединения " />
+        <Label layoutX="14.0" layoutY="639.0" text="Фонд рабочего времени за анализируемый период" />
+        <Label layoutX="14.0" layoutY="664.0" text="Доля соединений (уплотнений), потерявших герметичность (Приложения E NGH 39.2-66:2009)" />
+        <Label layoutX="14.0" layoutY="689.0" text="Количество единиц однотипных соединений (уплотнений)" />
+        <Label layoutX="14.0" layoutY="714.0" text="Среднестатистическая за анализируемый период плотность газа, принимается по лаб.исследованиям" />
+        <Label layoutX="14.0" layoutY="739.0" text="Предохранительные клапана (КП)">
+          <font>
+            <Font name="System Bold" size="12.0" />
+          </font>
+        </Label>
+        <Label layoutX="14.0" layoutY="764.0" text="Утечка газа через неподвижные или подвижные соединения " />
+        <Label layoutX="14.0" layoutY="789.0" text="Фонд рабочего времени за анализируемый период" />
+        <Label layoutX="14.0" layoutY="814.0" text="Доля соединений (уплотнений), потерявших герметичность (Приложения E NGH 39.2-66:2009)" />
+        <Label layoutX="14.0" layoutY="839.0" text="Количество единиц однотипных соединений (уплотнений)" />
+        <Label layoutX="14.0" layoutY="864.0" text="Среднестатистическая за анализируемый период плотность газа, принимается по лаб.исследованиям" />
+        <Label layoutX="14.0" layoutY="889.0" text="Фланцы">
+          <font>
+            <Font name="System Bold" size="12.0" />
+          </font>
+        </Label>
+        <Label layoutX="14.0" layoutY="914.0" text="Утечка газа через неподвижные или подвижные соединения " />
+        <Label layoutX="14.0" layoutY="939.0" text="Фонд рабочего времени за анализируемый период" />
+        <Label layoutX="14.0" layoutY="964.0" text="Доля соединений (уплотнений), потерявших герметичность (Приложения E NGH 39.2-66:2009)" />
+        <Label layoutX="14.0" layoutY="989.0" text="Количество единиц однотипных соединений (уплотнений)" />
+        <Label layoutX="14.0" layoutY="1014.0" text="Среднестатистическая за анализируемый период плотность газа, принимается по лаб.исследованиям" />
+        <Label layoutX="13.0" layoutY="1070.0" text="Количество воды, извлеченной на УКПГ" />
+        <Label layoutX="13.0" layoutY="1095.0" text="Молеклярная масса воды" />
+        <Label layoutX="13.0" layoutY="1120.0" text="Количество нестабильного конденсата на УКПГ" />
+        <Label layoutX="13.0" layoutY="1145.0" text="Средняя молекулярная масса нестабильного конденсата (результаты ГКИ)" />
+        <TextField fx:id="qskvget" layoutX="847.0" layoutY="10.0" prefHeight="17.0" prefWidth="67.0" />
+        <TextField fx:id="tskvget" layoutX="847.0" layoutY="36.0" prefHeight="17.0" prefWidth="67.0" />
+        <TextField fx:id="nprget" layoutX="847.0" layoutY="60.0" prefHeight="17.0" prefWidth="67.0" />
+        <TextField fx:id="nskvget" layoutX="847.0" layoutY="85.0" prefHeight="17.0" prefWidth="67.0" />
+        <TextField fx:id="qstkondget" layoutX="847.0" layoutY="110.0" prefHeight="17.0" prefWidth="67.0" />
+        <TextField fx:id="Nkolget" layoutX="847.0" layoutY="135.0" prefHeight="17.0" prefWidth="67.0" />
+        <TextField fx:id="vobshukpgget" layoutX="847.0" layoutY="160.0" prefHeight="17.0" prefWidth="67.0" />
+        <TextField fx:id="qbget" layoutX="847.0" layoutY="185.0" prefHeight="17.0" prefWidth="67.0" />
+        <TextField fx:id="rdbget" layoutX="847.0" layoutY="210.0" prefHeight="17.0" prefWidth="67.0" />
+        <TextField fx:id="kget" layoutX="847.0" layoutY="235.0" prefHeight="17.0" prefWidth="67.0" />
+        <TextField fx:id="cget" layoutX="847.0" layoutY="260.0" prefHeight="17.0" prefWidth="67.0" />
+        <TextField fx:id="vobshukpg1get" layoutX="847.0" layoutY="285.0" prefHeight="17.0" prefWidth="67.0" />
+        <TextField fx:id="Udegget" layoutX="847.0" layoutY="310.0" prefHeight="17.0" prefWidth="67.0" />
+        <TextField fx:id="Pget" layoutX="847.0" layoutY="335.0" prefHeight="17.0" prefWidth="67.0" />
+        <TextField fx:id="Tget" layoutX="847.0" layoutY="360.0" prefHeight="17.0" prefWidth="67.0" />
+        <TextField fx:id="Cget" layoutX="847.0" layoutY="385.0" prefHeight="17.0" prefWidth="67.0" />
+        <TextField fx:id="rash71get" layoutX="847.0" layoutY="410.0" prefHeight="17.0" prefWidth="67.0" />
+        <TextField fx:id="rash72get" layoutX="847.0" layoutY="435.0" prefHeight="17.0" prefWidth="67.0" />
+        <TextField fx:id="Qdeg8get" layoutX="847.0" layoutY="460.0" prefHeight="17.0" prefWidth="67.0" />
+        <TextField fx:id="Qkoteldkcget" layoutX="847.0" layoutY="485.0" prefHeight="17.0" prefWidth="67.0" />
+        <TextField fx:id="Qkotelukpgget" layoutX="847.0" layoutY="510.0" prefHeight="17.0" prefWidth="67.0" />
+        <TextField fx:id="Qfakeldkcget" layoutX="847.0" layoutY="535.0" prefHeight="17.0" prefWidth="67.0" />
+        <TextField fx:id="Qfakelukpgget" layoutX="847.0" layoutY="560.0" prefHeight="17.0" prefWidth="67.0" />
+        <TextField fx:id="qutechukpg1get" layoutX="847.0" layoutY="610.0" prefHeight="17.0" prefWidth="67.0" />
+        <TextField fx:id="tukpg1get" layoutX="847.0" layoutY="635.0" prefHeight="17.0" prefWidth="67.0" />
+        <TextField fx:id="yukpg1get" layoutX="847.0" layoutY="660.0" prefHeight="17.0" prefWidth="67.0" />
+        <TextField fx:id="nukpg1get" layoutX="847.0" layoutY="685.0" prefHeight="17.0" prefWidth="67.0" />
+        <TextField fx:id="pgukpg1get" layoutX="847.0" layoutY="710.0" prefHeight="17.0" prefWidth="67.0" />
+        <TextField fx:id="qutechgp1get" layoutX="847.0" layoutY="760.0" prefHeight="17.0" prefWidth="67.0" />
+        <TextField fx:id="tgp1get" layoutX="847.0" layoutY="785.0" prefHeight="17.0" prefWidth="67.0" />
+        <TextField fx:id="ugp1get" layoutX="847.0" layoutY="810.0" prefHeight="17.0" prefWidth="67.0" />
+        <TextField fx:id="ngp1get" layoutX="847.0" layoutY="835.0" prefHeight="17.0" prefWidth="67.0" />
+        <TextField fx:id="pggp1get" layoutX="847.0" layoutY="860.0" prefHeight="17.0" prefWidth="67.0" />
+        <TextField fx:id="qutechdkc1get" layoutX="847.0" layoutY="910.0" prefHeight="17.0" prefWidth="67.0" />
+        <TextField fx:id="tdkc1get" layoutX="847.0" layoutY="935.0" prefHeight="17.0" prefWidth="67.0" />
+        <TextField fx:id="udkc1get" layoutX="847.0" layoutY="960.0" prefHeight="17.0" prefWidth="67.0" />
+        <TextField fx:id="ndkc1get" layoutX="847.0" layoutY="985.0" prefHeight="17.0" prefWidth="67.0" />
+        <TextField fx:id="pgdkc1get" layoutX="847.0" layoutY="1010.0" prefHeight="17.0" prefWidth="67.0" />
+        <TextField fx:id="Gvodiget" layoutX="847.0" layoutY="1066.0" prefHeight="17.0" prefWidth="67.0" />
+        <TextField fx:id="MH2Oget" layoutX="847.0" layoutY="1091.0" prefHeight="17.0" prefWidth="67.0" />
+        <TextField fx:id="Gnestkondget" layoutX="847.0" layoutY="1116.0" prefHeight="17.0" prefWidth="67.00" />
+        <TextField fx:id="Mnestkondget" layoutX="847.0" layoutY="1141.0" prefHeight="17.0" prefWidth="67.0" />
+        <TextField fx:id="qutechukpgget" layoutX="694.0" layoutY="610.0" prefHeight="17.0" prefWidth="67.0" />
+        <TextField fx:id="tukpgget" layoutX="694.0" layoutY="635.0" prefHeight="17.0" prefWidth="67.0" />
+        <TextField fx:id="yukpgget" layoutX="694.0" layoutY="660.0" prefHeight="17.0" prefWidth="67.0" />
+        <TextField fx:id="nukpgget" layoutX="694.0" layoutY="685.0" prefHeight="17.0" prefWidth="67.0" />
+        <TextField fx:id="pgukpgget" layoutX="694.0" layoutY="710.0" prefHeight="17.0" prefWidth="67.0" />
+        <TextField fx:id="qutechgpget" layoutX="694.0" layoutY="760.0" prefHeight="17.0" prefWidth="67.0" />
+        <TextField fx:id="tgpget" layoutX="694.0" layoutY="785.0" prefHeight="17.0" prefWidth="67.0" />
+        <TextField fx:id="ugpget" layoutX="694.0" layoutY="810.0" prefHeight="17.0" prefWidth="67.0" />
+        <TextField fx:id="ngpget" layoutX="694.0" layoutY="835.0" prefHeight="17.0" prefWidth="67.0" />
+        <TextField fx:id="pggpget" layoutX="694.0" layoutY="860.0" prefHeight="17.0" prefWidth="67.0" />
+        <TextField fx:id="qutechdkcget" layoutX="694.0" layoutY="910.0" prefHeight="17.0" prefWidth="67.0" />
+        <TextField fx:id="tdkcget" layoutX="694.0" layoutY="935.0" prefHeight="17.0" prefWidth="67.0" />
+        <TextField fx:id="udkcget" layoutX="694.0" layoutY="960.0" prefHeight="17.0" prefWidth="67.0" />
+        <TextField fx:id="ndkcget" layoutX="694.0" layoutY="985.0" prefHeight="17.0" prefWidth="67.0" />
+        <TextField fx:id="pgdkcget" layoutX="694.0" layoutY="1010.0" prefHeight="17.0" prefWidth="67.0" />
+        <TextField fx:id="qutechukpg2get" layoutX="1002.0" layoutY="610.0" prefHeight="17.0" prefWidth="67.0" />
+        <TextField fx:id="tukpg2get" layoutX="1002.0" layoutY="635.0" prefHeight="17.0" prefWidth="67.0" />
+        <TextField fx:id="yukpg2get" layoutX="1002.0" layoutY="660.0" prefHeight="17.0" prefWidth="67" />
+        <TextField fx:id="nukpg2get" layoutX="1002.0" layoutY="685.0" prefHeight="17.0" prefWidth="67.0" />
+        <TextField fx:id="pgukpg2get" layoutX="1002.0" layoutY="710.0" prefHeight="17.0" prefWidth="67.0" />
+        <TextField fx:id="qutechgp2get" layoutX="1002.0" layoutY="760.0" prefHeight="17.0" prefWidth="67.0" />
+        <TextField fx:id="tgp2get" layoutX="1002.0" layoutY="785.0" prefHeight="17.0" prefWidth="67.0" />
+        <TextField fx:id="ugp2get" layoutX="1002.0" layoutY="810.0" prefHeight="17.0" prefWidth="67.0" />
+        <TextField fx:id="ngp2get" layoutX="1002.0" layoutY="835.0" prefHeight="17.0" prefWidth="67.0" />
+        <TextField fx:id="pggp2get" layoutX="1002.0" layoutY="860.0" prefHeight="17.0" prefWidth="67.0" />
+        <TextField fx:id="qutechdkc2get" layoutX="1002.0" layoutY="910.0" prefHeight="17.0" prefWidth="67.0" />
+        <TextField fx:id="tdkc2get" layoutX="1002.0" layoutY="935.0" prefHeight="17.0" prefWidth="67.0" />
+        <TextField fx:id="udkc2get" layoutX="1002.0" layoutY="960.0" prefHeight="17.0" prefWidth="67.0" />
+        <TextField fx:id="ndkc2get" layoutX="1002.0" layoutY="985.0" prefHeight="17.0" prefWidth="67.0" />
+        <TextField fx:id="pgdkc2get" layoutX="1002.0" layoutY="1010.0" prefHeight="17.0" prefWidth="67.0" />
+        <Label layoutX="1192.0" layoutY="9.0" text="Наименование показателя">
+          <font>
+            <Font name="System Bold" size="18.0" />
+          </font>
+        </Label>
+        <Label layoutX="1183.0" layoutY="39.0" text="Объем газа, подаваемого на УКПГ «Алан»" />
+        <Label layoutX="1183.0" layoutY="64.0" text="СНиП, всего" />
+        <Label layoutX="1183.0" layoutY="89.0" text="Технологические нетопливные нужды, в том числе:" />
+        <Label layoutX="1183.0" layoutY="114.0" text="Расход газа на продувку скважин (согласно NGH 39.2-66:2009)" />
+        <Label layoutX="1183.0" layoutY="139.0" text="Расход газа при продувке после ингибирования и очистки газопроводов (согласно NGH 39.2-66:2009)" />
+        <Label layoutX="1183.0" layoutY="164.0" text="Расход газа при ремонте (согласно NGH 39.2-66:2009)" />
+        <Label layoutX="1183.0" layoutY="189.0" text="Расход газа при дегазации конденсата (согласно NGH 39.2-66:2009)" />
+        <Label layoutX="1183.0" layoutY="214.0" text="Расход газа при дегазации пластовой воды (согласно NGH 39.2-66:2009)" />
+        <Label layoutX="1183.0" layoutY="239.0" text="Расход газа при регенерации ДЭГ (согласно NGH 39.2-66:2009)" />
+        <Label layoutX="1183.0" layoutY="264.0" text="Технологические топливные нужды,  в том числе:" />
+        <Label layoutX="1183.0" layoutY="289.0" text="Расход топливного газа на агрегаты ДКС-1 (показания прибора)" />
+        <Label layoutX="1183.0" layoutY="314.0" text="Расход топливного газа на работу БПГР ДКС (по паспортным данным)" />
+        <Label layoutX="1183.0" layoutY="339.0" text="Расход топливного газа на работу огневых регенераторов (показания прибора)" />
+        <Label layoutX="1183.0" layoutY="364.0" text="Расход газа на котельная ДКС (показания прибора)" />
+        <Label layoutX="1183.0" layoutY="389.0" text="Расход топливного газа на работу котельной УКПГ (показания прибора)" />
+        <Label layoutX="1183.0" layoutY="414.0" text="Расход газа на факельную систему ДКС (показания прибора)" />
+        <Label layoutX="1183.0" layoutY="439.0" text="Расход газа на факел УКПГ (показания прибора)" />
+        <Label layoutX="1183.0" layoutY="464.0" text="Технологические потери (утечки), в том числе:" />
+        <Label layoutX="1183.0" layoutY="489.0" text="Технологически потери газа на УКПГ (согласно NGH 39.2-66:2009)" />
+        <Label layoutX="1183.0" layoutY="514.0" text="Технологически потери газа на газопроводе Алан-МГПЗ (согласно NGH 39.2-66:2009)" />
+        <Label layoutX="1183.0" layoutY="539.0" text="Технологически потери газа на ДКС (согласно NGH 39.2-66:2009)" />
+        <Label layoutX="1183.0" layoutY="564.0" text="Расход (оседание) газа, в том числе:" />
+        <Label layoutX="1183.0" layoutY="589.0" text="Расход (оседание) газа с извлечением влаги (согласно NGH 39.0-245:2021)" />
+        <Label layoutX="1183.0" layoutY="614.0" text="Расход (оседание) газа на производство нестабильного конденсата (согласно NGH 39.0-245:2021)" />
+        <Label layoutX="1183.0" layoutY="639.0" text="СНиП+оседание всего">
+          <font>
+            <Font name="System Bold" size="12.0" />
+          </font></Label>
+        <TextField fx:id="Snipobgres" layoutX="1758.0" layoutY="36.0" prefHeight="25.0" prefWidth="67.0" />
+        <TextField fx:id="Snipallres" layoutX="1758.0" layoutY="60.0" prefHeight="25.0" prefWidth="67.0" />
+        <TextField fx:id="Snipallobres" layoutX="1825.0" layoutY="60.0" prefHeight="25.0" prefWidth="67.0" />
+        <TextField fx:id="Sniptechnujdres" layoutX="1758.0" layoutY="85.0" prefHeight="25.0" prefWidth="67.0" />
+        <TextField fx:id="Sniptechnujdobres" layoutX="1825.0" layoutY="85.0" prefHeight="25.0" prefWidth="67.0" />
+        <TextField fx:id="Snip11res" layoutX="1758.0" layoutY="110.0" prefHeight="25.0" prefWidth="67.0" />
+        <TextField fx:id="Snip11obres" layoutX="1825.0" layoutY="110.0" prefHeight="25.0" prefWidth="67.0" />
+        <TextField fx:id="Snip12res" layoutX="1758.0" layoutY="135.0" prefHeight="25.0" prefWidth="67.0" />
+        <TextField fx:id="Snip12obres" layoutX="1825.0" layoutY="135.0" prefHeight="25.0" prefWidth="67.0" />
+        <TextField fx:id="Snip13res" layoutX="1758.0" layoutY="160.0" prefHeight="25.0" prefWidth="67.0" />
+        <TextField fx:id="Snip13obres" layoutX="1825.0" layoutY="160.0" prefHeight="25.0" prefWidth="67.0" />
+        <TextField fx:id="Snip14res" layoutX="1758.0" layoutY="185.0" prefHeight="25.0" prefWidth="67.0" />
+        <TextField fx:id="Snip14obres" layoutX="1825.0" layoutY="185.0" prefHeight="25.0" prefWidth="67.0" />
+        <TextField fx:id="Snip15res" layoutX="1758.0" layoutY="210.0" prefHeight="25.0" prefWidth="67.0" />
+        <TextField fx:id="Snip15obres" layoutX="1825.0" layoutY="210.0" prefHeight="25.0" prefWidth="67.0" />
+        <TextField fx:id="Snip16res" layoutX="1758.0" layoutY="235.0" prefHeight="25.0" prefWidth="67.0" />
+        <TextField fx:id="Snip16obres" layoutX="1825.0" layoutY="235.0" prefHeight="25.0" prefWidth="67.0" />
+        <TextField fx:id="Sniptopnujdres" layoutX="1758.0" layoutY="260.0" prefHeight="25.0" prefWidth="67.0" />
+        <TextField fx:id="Sniptopnujdobres" layoutX="1825.0" layoutY="260.0" prefHeight="25.0" prefWidth="67.0" />
+        <TextField fx:id="Snip21res" layoutX="1758.0" layoutY="285.0" prefHeight="25.0" prefWidth="67.0" />
+        <TextField fx:id="Snip21obres" layoutX="1825.0" layoutY="285.0" prefHeight="25.0" prefWidth="67.0" />
+        <TextField fx:id="Snip22res" layoutX="1758.0" layoutY="310.0" prefHeight="25.0" prefWidth="67.0" />
+        <TextField fx:id="Snip22obres" layoutX="1825.0" layoutY="310.0" prefHeight="25.0" prefWidth="67.0" />
+        <TextField fx:id="Snip23res" layoutX="1758.0" layoutY="335.0" prefHeight="25.0" prefWidth="67.0" />
+        <TextField fx:id="Snip23obres" layoutX="1825.0" layoutY="335.0" prefHeight="25.0" prefWidth="67.0" />
+        <TextField fx:id="Snip24res" layoutX="1758.0" layoutY="360.0" prefHeight="25.0" prefWidth="67.0" />
+        <TextField fx:id="Snip24obres" layoutX="1825.0" layoutY="360.0" prefHeight="25.0" prefWidth="67.0" />
+        <TextField fx:id="Snip25res" layoutX="1758.0" layoutY="385.0" prefHeight="25.0" prefWidth="67.0" />
+        <TextField fx:id="Snip25obres" layoutX="1825.0" layoutY="385.0" prefHeight="25.0" prefWidth="67.0" />
+        <TextField fx:id="Snip26res" layoutX="1758.0" layoutY="410.0" prefHeight="25.0" prefWidth="67.0" />
+        <TextField fx:id="Snip26obres" layoutX="1825.0" layoutY="410.0" prefHeight="25.0" prefWidth="67.0" />
+        <TextField fx:id="Snip27res" layoutX="1758.0" layoutY="435.0" prefHeight="25.0" prefWidth="67.0" />
+        <TextField fx:id="Snip27obres" layoutX="1825.0" layoutY="435.0" prefHeight="25.0" prefWidth="67.0" />
+        <TextField fx:id="Snipoterres" layoutX="1758.0" layoutY="460.0" prefHeight="25.0" prefWidth="67.0" />
+        <TextField fx:id="Snipoterobres" layoutX="1825.0" layoutY="460.0" prefHeight="25.0" prefWidth="67.0" />
+        <TextField fx:id="Snip31res" layoutX="1758.0" layoutY="485.0" prefHeight="25.0" prefWidth="67.0" />
+        <TextField fx:id="Snip31obres" layoutX="1825.0" layoutY="485.0" prefHeight="25.0" prefWidth="67.0" />
+        <TextField fx:id="Snip32res" layoutX="1758.0" layoutY="510.0" prefHeight="25.0" prefWidth="67.0" />
+        <TextField fx:id="Snip32obres" layoutX="1825.0" layoutY="510.0" prefHeight="25.0" prefWidth="67.0" />
+        <TextField fx:id="Snip33res" layoutX="1758.0" layoutY="535.0" prefHeight="25.0" prefWidth="67.0" />
+        <TextField fx:id="Snip33obres" layoutX="1825.0" layoutY="535.0" prefHeight="25.0" prefWidth="67.0" />
+        <TextField fx:id="Sniposedres" layoutX="1758.0" layoutY="560.0" prefHeight="25.0" prefWidth="67.0" />
+        <TextField fx:id="Sniposedobres" layoutX="1825.0" layoutY="560.0" prefHeight="25.0" prefWidth="67.0" />
+        <TextField fx:id="Snip41res" layoutX="1758.0" layoutY="585.0" prefHeight="25.0" prefWidth="67.0" />
+        <TextField fx:id="Snip41obres" layoutX="1825.0" layoutY="585.0" prefHeight="25.0" prefWidth="67.0" />
+        <TextField fx:id="Snip42res" layoutX="1758.0" layoutY="610.0" prefHeight="25.0" prefWidth="67.0" />
+        <TextField fx:id="Snip42obres" layoutX="1825.0" layoutY="610.0" prefHeight="25.0" prefWidth="67.0" />
+        <TextField fx:id="Sniposedallres" layoutX="1758.0" layoutY="635.0" prefHeight="25.0" prefWidth="67.0" />
+        <TextField fx:id="Sniposedallobres" layoutX="1825.0" layoutY="635.0" prefHeight="25.0" prefWidth="67.0" />
+        <Button fx:id="button" onAction="#onButtonClick" text="button" layoutX="1825.0" layoutY="900.0" prefHeight="25.0" prefWidth="67.0"/>
+      </children>
+    </Pane>
+  </children>
+  <columnConstraints>
+    <ColumnConstraints />
+  </columnConstraints>
+  <rowConstraints>
+    <RowConstraints />
+  </rowConstraints>
+</GridPane>
+
