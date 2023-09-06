@@ -11,13 +11,14 @@ public class HelloController {
 
     @FXML
     private TextField qskvget;
+    double qskv;
     @FXML
     private TextField tskvget;
 
 
     @FXML
     protected void onButtonClick() {
-
+        qskv= Double.parseDouble(qskvget.getText());
         System.out.println(qskvget.getText());
         double a= Double.parseDouble(qskvget.getText());
         double a2=a*a;

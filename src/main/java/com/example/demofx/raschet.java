@@ -323,7 +323,6 @@ public class raschet {
         Snip14 = Qdeg;
         Snip15 = Qdeg2;
         Snip16 = Qreg;
-        Sniptopnujd = Snip21 + Snip22 + Snip23 + Snip24 +Snip25 + Snip26 + Snip27;
         Snip21 = rash71;
         Snip22 = rash72;
         Snip23 = Qdeg8;
@@ -331,10 +330,11 @@ public class raschet {
         Snip25 = Qkotelukpg;
         Snip26 = Qfakeldkc;
         Snip27 = Qfakelukpg;
-        Snipoter = Snip31 +Snip32 + Snip33;
+        Sniptopnujd = Snip21 + Snip22 + Snip23 + Snip24 +Snip25 + Snip26 + Snip27;
         Snip31 = rash111;
         Snip32 = rash112;
         Snip33 = rash113;
+        Snipoter = Snip31 +Snip32 + Snip33;
         Snip41 = Qupb;
         Sniposed = Snip41;
         Snip42 = Qupnest;
