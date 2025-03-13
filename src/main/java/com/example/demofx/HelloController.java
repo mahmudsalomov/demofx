@@ -3,6 +3,7 @@ package com.example.demofx;
 import javafx.fxml.FXML;
 import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
+import java.lang.String;
 
 public class HelloController {
     public TextField nprget;
@@ -398,91 +399,91 @@ public class HelloController {
 
     @FXML
     protected void onButtonClick() {
-        qskv = Double.parseDouble(qskvget.getText());
-        tsks = Double.parseDouble(tsksget.getText());
-        npr = Double.parseDouble(nprget.getText());
-        nskv = Double.parseDouble(nskvget.getText());
+        qskv = validValue(qskvget.getText());
+        tsks =validValue(tsksget.getText());
+        npr = validValue(nprget.getText());
+        nskv = validValue(nskvget.getText());
         Vskv = qskv * tsks * npr * nskv; //расчет
-        qstkond = Double.parseDouble(qstkondget.getText());
-        nkol = Double.parseDouble(Nkolget.getText());
+        qstkond = validValue(qstkondget.getText());
+        nkol = validValue(Nkolget.getText());
        Qdeg = qstkond * nkol / 1000; // расчет
-        vobshukpg = Double.parseDouble(vobshukpgget.getText());
-        qb = Double.parseDouble(qbget.getText());
-        rdb = Double.parseDouble(rdbget.getText());
-        k = Double.parseDouble(kget.getText());
-        c = Double.parseDouble(cget.getText());
+        vobshukpg = validValue(vobshukpgget.getText());
+        qb = validValue(qbget.getText());
+        rdb = validValue(rdbget.getText());
+        k = validValue(kget.getText());
+        c = validValue(cget.getText());
         qgaz = rdb * Math.pow(10,-k * c); //расчет
         Qdeg2 = vobshukpg * qgaz * qb   / 1000; //расчет
-        vobshukpg1 = Double.parseDouble(vobshukpg1get.getText());
-        Udeg = Double.parseDouble(Udegget.getText());
-        P = Double.parseDouble(Pget.getText());
-        T = Double.parseDouble(Tget.getText());
-        C = Double.parseDouble(Cget.getText());
+        vobshukpg1 = validValue(vobshukpg1get.getText());
+        Udeg = validValue(Udegget.getText());
+        P = validValue(Pget.getText());
+        T = validValue(Tget.getText());
+        C = validValue(Cget.getText());
         Vreg = vobshukpg1 * Udeg; //расчет
         A = 1.415 * C / 1000 + 5.78 * Math.pow(C,2)/1000000 + 1.43 * T * C / 100000 + 3.57 * Math.pow(T,2) / 1000000 -7.048/100; //расчет
         qdeg1 = P * A; // расчет
         Qreg = qdeg1 * Vreg/1000; //расчет
-        rash71 = Double.parseDouble(rash71get.getText());
-        rash72 = Double.parseDouble(rash72get.getText());
-        Qdeg8 = Double.parseDouble(Qdeg8get.getText());
-        Qkoteldkc =Double.parseDouble(Qkoteldkcget.getText());
-        Qkotelukpg = Double.parseDouble(Qkotelukpgget.getText());
-        Qfakeldkc = Double.parseDouble(Qfakeldkcget.getText());
-        Qfakelukpg = Double.parseDouble(Qfakelukpgget.getText());
-        qutechukpg =Double.parseDouble(qutechukpgget.getText());
-        tukpg =Double.parseDouble(tukpgget.getText());
-        yukpg =Double.parseDouble(yukpgget.getText());
-        nukpg =Double.parseDouble(nukpgget.getText());
-        pgukpg =Double.parseDouble(pgukpgget.getText());
-        qutechgp = Double.parseDouble(qutechgpget.getText());
-        tgp = Double.parseDouble(tgpget.getText());
-        ugp = Double.parseDouble(ugpget.getText());
-        ngp = Double.parseDouble(ngpget.getText());
-        pggp = Double.parseDouble(pggpget.getText());
-       qutechdkc =Double.parseDouble(qutechdkcget.getText());
-        tdkc =Double.parseDouble(tdkcget.getText());
-        udkc = Double.parseDouble(udkcget.getText());
-        ndkc =Double.parseDouble(ndkcget.getText());
-        pgdkc =Double.parseDouble(pgdkcget.getText());
+        rash71 = validValue(rash71get.getText());
+        rash72 = validValue(rash72get.getText());
+        Qdeg8 = validValue(Qdeg8get.getText());
+        Qkoteldkc =validValue(Qkoteldkcget.getText());
+        Qkotelukpg = validValue(Qkotelukpgget.getText());
+        Qfakeldkc = validValue(Qfakeldkcget.getText());
+        Qfakelukpg = validValue(Qfakelukpgget.getText());
+        qutechukpg =validValue(qutechukpgget.getText());
+        tukpg =validValue(tukpgget.getText());
+        yukpg =validValue(yukpgget.getText());
+        nukpg =validValue(nukpgget.getText());
+        pgukpg =validValue(pgukpgget.getText());
+        qutechgp = validValue(qutechgpget.getText());
+        tgp = validValue(tgpget.getText());
+        ugp = validValue(ugpget.getText());
+        ngp = validValue(ngpget.getText());
+        pggp = validValue(pggpget.getText());
+       qutechdkc =validValue(qutechdkcget.getText());
+        tdkc =validValue(tdkcget.getText());
+        udkc = validValue(udkcget.getText());
+        ndkc =validValue(ndkcget.getText());
+        pgdkc =validValue(pgdkcget.getText());
         rash111 = ((qutechukpg * tukpg * yukpg * nukpg / pgukpg)+(qutechgp * tgp * ugp *ngp/pggp)+(qutechdkc * tdkc * udkc * ndkc/pgdkc))/1000; // расчет
 
-        qutechukpg1 =Double.parseDouble(qutechukpg1get.getText());
-        tukpg1 =Double.parseDouble(tukpg1get.getText());
-        yukpg1 =Double.parseDouble(yukpg1get.getText());
-        nukpg1 =Double.parseDouble(nukpg1get.getText());
-        pgukpg1 =Double.parseDouble(pgukpg1get.getText());
-        qutechgp1 = Double.parseDouble(qutechgp1get.getText());
-        tgp1 = Double.parseDouble(tgp1get.getText());
-        ugp1 = Double.parseDouble(ugp1get.getText());
-        ngp1 = Double.parseDouble(ngp1get.getText());
-        pggp1 = Double.parseDouble(pggp1get.getText());
-        qutechdkc1 =Double.parseDouble(qutechdkc1get.getText());
-        tdkc1 =Double.parseDouble(tdkc1get.getText());
-        udkc1 = Double.parseDouble(udkc1get.getText());
-        ndkc1 =Double.parseDouble(ndkc1get.getText());
-        pgdkc1 =Double.parseDouble(pgdkc1get.getText());
+        qutechukpg1 =validValue(qutechukpg1get.getText());
+        tukpg1 =validValue(tukpg1get.getText());
+        yukpg1 =validValue(yukpg1get.getText());
+        nukpg1 =validValue(nukpg1get.getText());
+        pgukpg1 =validValue(pgukpg1get.getText());
+        qutechgp1 = validValue(qutechgp1get.getText());
+        tgp1 = validValue(tgp1get.getText());
+        ugp1 = validValue(ugp1get.getText());
+        ngp1 = validValue(ngp1get.getText());
+        pggp1 = validValue(pggp1get.getText());
+        qutechdkc1 =validValue(qutechdkc1get.getText());
+        tdkc1 =validValue(tdkc1get.getText());
+        udkc1 = validValue(udkc1get.getText());
+        ndkc1 =validValue(ndkc1get.getText());
+        pgdkc1 =validValue(pgdkc1get.getText());
         rash112 = ((qutechukpg1 * tukpg1 * yukpg1 * nukpg1 / pgukpg1)+(qutechgp1 * tgp1 * ugp1 *ngp1/pggp1)+(qutechdkc1 * tdkc1 * udkc1 * ndkc1/pgdkc1))/1000; // расчет
 
-        qutechukpg2 =Double.parseDouble(qutechukpg2get.getText());
-        tukpg2 =Double.parseDouble(tukpg2get.getText());
-        yukpg2 =Double.parseDouble(yukpg2get.getText());
-        nukpg2 =Double.parseDouble(nukpg2get.getText());
-        pgukpg2 =Double.parseDouble(pgukpg2get.getText());
-        qutechgp2 = Double.parseDouble(qutechgp2get.getText());
-        tgp2 = Double.parseDouble(tgp2get.getText());
-        ugp2 = Double.parseDouble(ugp2get.getText());
-        ngp2 = Double.parseDouble(ngp2get.getText());
-        pggp2 = Double.parseDouble(pggp2get.getText());
-        qutechdkc2 =Double.parseDouble(qutechdkc2get.getText());
-        tdkc2 =Double.parseDouble(tdkc2get.getText());
-        udkc2 = Double.parseDouble(udkc2get.getText());
-        ndkc2 =Double.parseDouble(ndkc2get.getText());
-        pgdkc2 =Double.parseDouble(pgdkc2get.getText());
+        qutechukpg2 =validValue(qutechukpg2get.getText());
+        tukpg2 =validValue(tukpg2get.getText());
+        yukpg2 =validValue(yukpg2get.getText());
+        nukpg2 =validValue(nukpg2get.getText());
+        pgukpg2 =validValue(pgukpg2get.getText());
+        qutechgp2 = validValue(qutechgp2get.getText());
+        tgp2 = validValue(tgp2get.getText());
+        ugp2 = validValue(ugp2get.getText());
+        ngp2 = validValue(ngp2get.getText());
+        pggp2 = validValue(pggp2get.getText());
+        qutechdkc2 =validValue(qutechdkc2get.getText());
+        tdkc2 =validValue(tdkc2get.getText());
+        udkc2 = validValue(udkc2get.getText());
+        ndkc2 =validValue(ndkc2get.getText());
+        pgdkc2 =validValue(pgdkc2get.getText());
         rash113 = ((qutechukpg2 * tukpg2 * yukpg2 * nukpg2 / pgukpg2)+(qutechgp2 * tgp2 * ugp2 *ngp2/pggp2)+(qutechdkc2 * tdkc2 * udkc2 * ndkc2/pgdkc2))/1000; //расчет
-        Gvodi = Double.parseDouble(Gvodiget.getText());
-        MH2O = Double.parseDouble(MH2Oget.getText());
-        Gnestkond =Double.parseDouble(Gnestkondget.getText());
-        Mnestkond =Double.parseDouble(Mnestkondget.getText());
+        Gvodi = validValue(Gvodiget.getText());
+        MH2O = validValue(MH2Oget.getText());
+        Gnestkond =validValue(Gnestkondget.getText());
+        Mnestkond =validValue(Mnestkondget.getText());
         Qupb = Gvodi/MH2O * 24.04; //расчет
         Qupnest = Gnestkond / Mnestkond * 24.04; //расчет
         Snipobg = vobshukpg * 1000;
@@ -503,11 +504,13 @@ public class HelloController {
         Snip31 = rash111;
         Snip32 = rash112;
         Snip33 = rash113;
-        Snipoter = Snip31 +Snip32 + Snip33; // расчет/                Snip41 = Qupb;
+        Snipoter = Snip31 +Snip32 + Snip33; // расчет/
+        Snip41 = Qupb;
        Sniposed = Snip41;
         Snip42 = Qupnest;
         Sniptechnujd = Snip11 + Snip12 + Snip13 + Snip14 + Snip15 +Snip16;
         Snipall = Sniptechnujd + Sniptopnujd + Snipoter;
+        Sniposedall = Sniposed +Snipall;
 
         Snip11ob = Snip11 / Snipobg * 100;
         Snip12ob = Snip12 / Snipobg * 100;
@@ -535,35 +538,31 @@ public class HelloController {
         Snipsallob = Sniptechnujdob +Sniptopnujdob + Snipoterob;
         Sniposedallob = Snipsallob + Sniposedob;
 
-        //qskv= Double.parseDouble(qskvget.getText());
-       // System.out.println(qskvget.getText());
-        //double a= Double.parseDouble(qskvget.getText());
-        //double a2=a*a;
-        //tskvget.setText(String.valueOf(tsks));
-        Snipobgres.setText(String.valueOf(Snipobg));
-        Snipallres.setText(String.valueOf(Snipall));
-        Sniptechnujdres.setText(String.valueOf(Sniptechnujd));
-        Snip11res.setText(String.valueOf(Snip11));
-        Snip12res .setText(String.valueOf(Snip12));
-        Snip13res.setText(String.valueOf(Snip13));
-        Snip14res.setText(String.valueOf(Snip14));
-        Snip15res.setText(String.valueOf(Snip15));
-        Snip16res.setText(String.valueOf(Snip16));
-        Sniptopnujdres.setText(String.valueOf(Sniptopnujd));
-        Snip21res.setText(String.valueOf(Snip21));
-        Snip22res.setText(String.valueOf(Snip22));
-        Snip23res.setText(String.valueOf(Snip23));
-        Snip24res.setText(String.valueOf(Snip24));
-        Snip25res.setText(String.valueOf(Snip25));
-        Snip26res.setText(String.valueOf(Snip26));
-        Snip27res.setText(String.valueOf(Snip27));
-        Snipoterres.setText(String.valueOf(Snipoter));
-        Snip31res.setText(String.valueOf(Snip31));
-        Snip32res.setText(String.valueOf(Snip32));
-        Snip33res.setText(String.valueOf(Snip33));
-        Sniposedres.setText(String.valueOf(Snipobg));
-        Snip41res.setText(String.valueOf(Snip41));
-        Snip42res.setText(String.valueOf(Snip42));
+
+        Snipobgres.setText(String.valueOf(Snipobg ));
+        Snipallres.setText(String.valueOf(Snipall %.3f));
+        Sniptechnujdres.setText(String.valueOf(Sniptechnujd %.3f));
+        Snip11res.setText(String.valueOf(Snip11 %.3f));
+        Snip12res .setText(String.valueOf(Snip12 %.3f));
+        Snip13res.setText(String.valueOf(Snip13 %.3f));
+        Snip14res.setText(String.valueOf(Snip14 %.3f));
+        Snip15res.setText(String.valueOf(Snip15 %.3f));
+        Snip16res.setText(String.valueOf(Snip16 %.3f));
+        Sniptopnujdres.setText(String.valueOf(Sniptopnujd %.3f));
+        Snip21res.setText(String.valueOf(Snip21 %.3));
+        Snip22res.setText(String.valueOf(Snip22 %.3));
+        Snip23res.setText(String.valueOf(Snip23 %.3));
+        Snip24res.setText(String.valueOf(Snip24 %.3));
+        Snip25res.setText(String.valueOf(Snip25 %.3));
+        Snip26res.setText(String.valueOf(Snip26 %.3));
+        Snip27res.setText(String.valueOf(Snip27 %.3));
+        Snipoterres.setText(String.valueOf(Snipoter %.3));
+        Snip31res.setText(String.valueOf(Snip31 %.3));
+        Snip32res.setText(String.valueOf(Snip32 %.3));
+        Snip33res.setText(String.valueOf(Snip33 %.3));
+        Sniposedres.setText(String.valueOf(Snipobg %.3));
+        Snip41res.setText(String.valueOf(Snip41 %.3));
+        Snip42res.setText(String.valueOf(Snip42 %.3));
         Sniposedallres.setText(String.valueOf(Sniposedall));
 
         Snipallobres.setText(String.valueOf(Snipall));
@@ -596,5 +595,16 @@ public class HelloController {
 
 //        welcomeText.setText(qskvget.getText());
 //        yangi.setText("salom");
+    }
+
+    private Double validValue(String value){
+        try {
+            if (value.isEmpty()){
+                return 0.0;
+            }
+            return Double.valueOf(value);
+        }catch (Exception e){
+            return 0.0;
+        }
     }
 }

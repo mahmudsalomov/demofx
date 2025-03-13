@@ -16,7 +16,7 @@
       <content>
         <Pane>
             <children>
-                <Label layoutX="14.0" layoutY="14.0" prefHeight="17.0" prefWidth="123.0" text="Дебит продуваемой скважины по газу при заданных режимах" />
+                <Label layoutX="14.0" layoutY="14.0" prefHeight="17.0" prefWidth="385.0" text="Дебит продуваемой скважины по газу при заданных режимах" />
                 <Label layoutX="14.0" layoutY="39.0" text="Продолжительность продувки скважины при заданных режимах" />
                 <Label layoutX="14.0" layoutY="64.0" text="Количество продувок" />
                 <Label layoutX="14.0" layoutY="89.0" text="Количество скважин" />
@@ -115,36 +115,36 @@
                 <TextField fx:id="MH2Oget" layoutX="847.0" layoutY="1091.0" prefHeight="17.0" prefWidth="67.0" />
                 <TextField fx:id="Gnestkondget" layoutX="847.0" layoutY="1116.0" prefHeight="17.0" prefWidth="67.00" />
                 <TextField fx:id="Mnestkondget" layoutX="847.0" layoutY="1141.0" prefHeight="17.0" prefWidth="67.0" />
-                <TextField fx:id="qutechukpgget" layoutX="694.0" layoutY="610.0" prefHeight="17.0" prefWidth="67.0" />
-                <TextField fx:id="tukpgget" layoutX="694.0" layoutY="635.0" prefHeight="17.0" prefWidth="67.0" />
-                <TextField fx:id="yukpgget" layoutX="694.0" layoutY="660.0" prefHeight="17.0" prefWidth="67.0" />
-                <TextField fx:id="nukpgget" layoutX="694.0" layoutY="685.0" prefHeight="17.0" prefWidth="67.0" />
-                <TextField fx:id="pgukpgget" layoutX="694.0" layoutY="710.0" prefHeight="17.0" prefWidth="67.0" />
-                <TextField fx:id="qutechgpget" layoutX="694.0" layoutY="760.0" prefHeight="17.0" prefWidth="67.0" />
-                <TextField fx:id="tgpget" layoutX="694.0" layoutY="785.0" prefHeight="17.0" prefWidth="67.0" />
-                <TextField fx:id="ugpget" layoutX="694.0" layoutY="810.0" prefHeight="17.0" prefWidth="67.0" />
-                <TextField fx:id="ngpget" layoutX="694.0" layoutY="835.0" prefHeight="17.0" prefWidth="67.0" />
-                <TextField fx:id="pggpget" layoutX="694.0" layoutY="860.0" prefHeight="17.0" prefWidth="67.0" />
-                <TextField fx:id="qutechdkcget" layoutX="694.0" layoutY="910.0" prefHeight="17.0" prefWidth="67.0" />
-                <TextField fx:id="tdkcget" layoutX="694.0" layoutY="935.0" prefHeight="17.0" prefWidth="67.0" />
-                <TextField fx:id="udkcget" layoutX="694.0" layoutY="960.0" prefHeight="17.0" prefWidth="67.0" />
-                <TextField fx:id="ndkcget" layoutX="694.0" layoutY="985.0" prefHeight="17.0" prefWidth="67.0" />
-                <TextField fx:id="pgdkcget" layoutX="694.0" layoutY="1010.0" prefHeight="17.0" prefWidth="67.0" />
-                <TextField fx:id="qutechukpg2get" layoutX="1002.0" layoutY="610.0" prefHeight="17.0" prefWidth="67.0" />
-                <TextField fx:id="tukpg2get" layoutX="1002.0" layoutY="635.0" prefHeight="17.0" prefWidth="67.0" />
-                <TextField fx:id="yukpg2get" layoutX="1002.0" layoutY="660.0" prefHeight="17.0" prefWidth="67" />
-                <TextField fx:id="nukpg2get" layoutX="1002.0" layoutY="685.0" prefHeight="17.0" prefWidth="67.0" />
-                <TextField fx:id="pgukpg2get" layoutX="1002.0" layoutY="710.0" prefHeight="17.0" prefWidth="67.0" />
-                <TextField fx:id="qutechgp2get" layoutX="1002.0" layoutY="760.0" prefHeight="17.0" prefWidth="67.0" />
-                <TextField fx:id="tgp2get" layoutX="1002.0" layoutY="785.0" prefHeight="17.0" prefWidth="67.0" />
-                <TextField fx:id="ugp2get" layoutX="1002.0" layoutY="810.0" prefHeight="17.0" prefWidth="67.0" />
-                <TextField fx:id="ngp2get" layoutX="1002.0" layoutY="835.0" prefHeight="17.0" prefWidth="67.0" />
-                <TextField fx:id="pggp2get" layoutX="1002.0" layoutY="860.0" prefHeight="17.0" prefWidth="67.0" />
-                <TextField fx:id="qutechdkc2get" layoutX="1002.0" layoutY="910.0" prefHeight="17.0" prefWidth="67.0" />
-                <TextField fx:id="tdkc2get" layoutX="1002.0" layoutY="935.0" prefHeight="17.0" prefWidth="67.0" />
-                <TextField fx:id="udkc2get" layoutX="1002.0" layoutY="960.0" prefHeight="17.0" prefWidth="67.0" />
-                <TextField fx:id="ndkc2get" layoutX="1002.0" layoutY="985.0" prefHeight="17.0" prefWidth="67.0" />
-                <TextField fx:id="pgdkc2get" layoutX="1002.0" layoutY="1010.0" prefHeight="17.0" prefWidth="67.0" />
+                <TextField fx:id="qutechukpgget" layoutX="765.0" layoutY="612.0" prefHeight="17.0" prefWidth="67.0" />
+                <TextField fx:id="tukpgget" layoutX="765.0" layoutY="637.0" prefHeight="17.0" prefWidth="67.0" />
+                <TextField fx:id="yukpgget" layoutX="765.0" layoutY="662.0" prefHeight="17.0" prefWidth="67.0" />
+                <TextField fx:id="nukpgget" layoutX="765.0" layoutY="687.0" prefHeight="17.0" prefWidth="67.0" />
+                <TextField fx:id="pgukpgget" layoutX="765.0" layoutY="712.0" prefHeight="17.0" prefWidth="67.0" />
+                <TextField fx:id="qutechgpget" layoutX="765.0" layoutY="762.0" prefHeight="17.0" prefWidth="67.0" />
+                <TextField fx:id="tgpget" layoutX="765.0" layoutY="787.0" prefHeight="17.0" prefWidth="67.0" />
+                <TextField fx:id="ugpget" layoutX="765.0" layoutY="812.0" prefHeight="17.0" prefWidth="67.0" />
+                <TextField fx:id="ngpget" layoutX="765.0" layoutY="837.0" prefHeight="17.0" prefWidth="67.0" />
+                <TextField fx:id="pggpget" layoutX="765.0" layoutY="862.0" prefHeight="17.0" prefWidth="67.0" />
+                <TextField fx:id="qutechdkcget" layoutX="765.0" layoutY="912.0" prefHeight="17.0" prefWidth="67.0" />
+                <TextField fx:id="tdkcget" layoutX="765.0" layoutY="937.0" prefHeight="17.0" prefWidth="67.0" />
+                <TextField fx:id="udkcget" layoutX="765.0" layoutY="962.0" prefHeight="17.0" prefWidth="67.0" />
+                <TextField fx:id="ndkcget" layoutX="765.0" layoutY="987.0" prefHeight="17.0" prefWidth="67.0" />
+                <TextField fx:id="pgdkcget" layoutX="765.0" layoutY="1012.0" prefHeight="17.0" prefWidth="67.0" />
+                <TextField fx:id="qutechukpg2get" layoutX="935.0" layoutY="612.0" prefHeight="17.0" prefWidth="67.0" />
+                <TextField fx:id="tukpg2get" layoutX="935.0" layoutY="637.0" prefHeight="17.0" prefWidth="67.0" />
+                <TextField fx:id="yukpg2get" layoutX="935.0" layoutY="662.0" prefHeight="17.0" prefWidth="67" />
+                <TextField fx:id="nukpg2get" layoutX="935.0" layoutY="687.0" prefHeight="17.0" prefWidth="67.0" />
+                <TextField fx:id="pgukpg2get" layoutX="935.0" layoutY="712.0" prefHeight="17.0" prefWidth="67.0" />
+                <TextField fx:id="qutechgp2get" layoutX="935.0" layoutY="762.0" prefHeight="17.0" prefWidth="67.0" />
+                <TextField fx:id="tgp2get" layoutX="935.0" layoutY="787.0" prefHeight="17.0" prefWidth="67.0" />
+                <TextField fx:id="ugp2get" layoutX="935.0" layoutY="812.0" prefHeight="17.0" prefWidth="67.0" />
+                <TextField fx:id="ngp2get" layoutX="935.0" layoutY="837.0" prefHeight="17.0" prefWidth="67.0" />
+                <TextField fx:id="pggp2get" layoutX="935.0" layoutY="862.0" prefHeight="17.0" prefWidth="67.0" />
+                <TextField fx:id="qutechdkc2get" layoutX="935.0" layoutY="912.0" prefHeight="17.0" prefWidth="67.0" />
+                <TextField fx:id="tdkc2get" layoutX="935.0" layoutY="937.0" prefHeight="17.0" prefWidth="67.0" />
+                <TextField fx:id="udkc2get" layoutX="935.0" layoutY="962.0" prefHeight="17.0" prefWidth="67.0" />
+                <TextField fx:id="ndkc2get" layoutX="935.0" layoutY="987.0" prefHeight="17.0" prefWidth="67.0" />
+                <TextField fx:id="pgdkc2get" layoutX="935.0" layoutY="1012.0" prefHeight="17.0" prefWidth="67.0" />
                 <Label layoutX="1192.0" layoutY="9.0" text="Наименование показателя">
                     <font>
                         <Font name="System Bold" size="18.0" />
@@ -178,7 +178,7 @@
                     <font>
                         <Font name="System Bold" size="12.0" />
                     </font></Label>
-                <TextField fx:id="Snipobgres" layoutX="1758.0" layoutY="36.0" prefHeight="25.0" prefWidth="67.0" />
+                <TextField fx:id="Snipobgres" layoutX="1758.0" layoutY="36.0" prefHeight="25.0" prefWidth="67.0"  />
                 <TextField fx:id="Snipallres" layoutX="1758.0" layoutY="60.0" prefHeight="25.0" prefWidth="67.0" />
                 <TextField fx:id="Snipallobres" layoutX="1825.0" layoutY="60.0" prefHeight="25.0" prefWidth="67.0" />
                 <TextField fx:id="Sniptechnujdres" layoutX="1758.0" layoutY="85.0" prefHeight="25.0" prefWidth="67.0" />
@@ -227,8 +227,8 @@
                 <TextField fx:id="Snip42obres" layoutX="1825.0" layoutY="610.0" prefHeight="25.0" prefWidth="67.0" />
                 <TextField fx:id="Sniposedallres" layoutX="1758.0" layoutY="635.0" prefHeight="25.0" prefWidth="67.0" />
                 <TextField fx:id="Sniposedallobres" layoutX="1825.0" layoutY="635.0" prefHeight="25.0" prefWidth="67.0" />
-                <Button fx:id="button" layoutX="1630.0" layoutY="719.0" onAction="#onButtonClick" prefHeight="25.0" prefWidth="237.0" text="button" />
-                  <Label layoutX="714.0" layoutY="589.0" text="УКПГ">
+                <Button fx:id="button" layoutX="1630.0" layoutY="719.0" onAction="#onButtonClick" prefHeight="25.0" prefWidth="237.0" text="Calculate" />
+                  <Label layoutX="781.0" layoutY="589.0" text="УКПГ">
                      <font>
                         <Font name="System Bold" size="14.0" />
                      </font>
@@ -238,7 +238,7 @@
                         <Font name="System Bold" size="14.0" />
                      </font>
                   </Label>
-                  <Label layoutX="1021.0" layoutY="589.0" text="ДКС">
+                  <Label layoutX="954.0" layoutY="591.0" text="ДКС">
                      <font>
                         <Font name="System Bold" size="14.0" />
                      </font>

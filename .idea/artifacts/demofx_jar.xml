@@ -1,5 +1,5 @@
 <component name="ArtifactManager">
-  <artifact type="jar" build-on-make="true" name="demofx:jar">
+  <artifact type="jar" name="demofx:jar">
     <output-path>$PROJECT_DIR$/out/artifacts/demofx_jar</output-path>
     <root id="archive" name="demofx.jar">
       <element id="module-output" name="demofx" />

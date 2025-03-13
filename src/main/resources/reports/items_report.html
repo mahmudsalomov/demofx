@@ -1,0 +1,47 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title></title>
+    <meta charset="utf-8">
+    <style>
+        body {
+            font-family: "Open Sans";
+        }
+
+        h2, h3 {
+            margin: 15px;
+            color: #545454;
+            font-weight: bold;
+        }
+        table {
+            width: 700px;
+            border: 1px solid #eaebed;
+            margin: 15px 15px 15px 15px;
+            border-spacing: 0px;
+            color: #545454;
+        }
+        .header-row {
+            font-weight: bold;
+            background: #dbdbdb;
+        }
+    </style>
+</head>
+<body>
+<h2>Расчет Алан</h2>
+<table id="goods-rows">
+    <tr class="header-row">
+        <td>№</td>
+        <td>Наименование показателя</td>
+        <td>СНиП 1*103m3</td>
+        <td>% от объема добычи</td>
+    </tr>
+    <tr class="row-template">
+        <td class="number"></td>
+        <td class="nameofparameter"></td>
+        <td class="Snipres"></td>
+        <td class="Snipobres"></td>
+    </tr>
+</table>
+<h3>Дата отчета: <span id="date"></span></h3>
+</body>
+</html>
