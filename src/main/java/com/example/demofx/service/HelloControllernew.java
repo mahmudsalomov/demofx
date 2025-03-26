@@ -322,8 +322,6 @@ public class HelloControllernew {
     @FXML
     private TextField tskvget;
     @FXML
-    private TextField nprget;
-    @FXML
     private TextField nskvget;
     @FXML
     private TextField Vskvget;
@@ -614,8 +612,6 @@ public class HelloControllernew {
     @FXML
     private TextField pgdkc2get;
     @FXML
-    private TextField plotnostkcget;
-    @FXML
     private TextField  plotnostkc1get;
     @FXML
     private TextField  plotnostkc2get;
@@ -638,6 +634,15 @@ public class HelloControllernew {
     @FXML
     private TextField obpoterflansukpg2get;
 
+
+    @FXML
+    private TextField Gvodiget;
+    @FXML
+    private TextField MH2Oget;
+    @FXML
+    private TextField Gnestkondget;
+    @FXML
+    private TextField Mnestkondget;
 
     @FXML
     private TextField Snipobgres;
@@ -739,6 +744,9 @@ public class HelloControllernew {
     private TextField Snip42obres;
     @FXML
     private TextField Sniposedallobres;
+
+    @FXML
+    private TextField justname;
     @FXML
     private TextField tsksget;
 
@@ -1201,13 +1209,6 @@ public class HelloControllernew {
         row.put("nameofparameter", "Расход газа на факельную систему ДКС (показания прибора)");
         row.put("Snipres",(String.valueOf(Snip26))); //Snip26res
         row.put("Snipobres",(String.valueOf(Snip26ob))); //Snip26obres
-        table.add(row);
-
-        row = new HashMap<>();
-        row.put("number", " 2.7");
-        row.put("nameofparameter", "Расход газа на факел УКПГ(показания прибора)");
-        row.put("Snipres",(String.valueOf(Snip27))); //Snip27res
-        row.put("Snipobres",(String.valueOf(Snip27ob))); //Snip27obres
         table.add(row);
 
         row = new HashMap<>();
