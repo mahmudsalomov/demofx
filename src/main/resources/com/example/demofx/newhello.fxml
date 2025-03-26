@@ -1,0 +1,542 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.text.Font?>
+
+<ScrollPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1080.0" prefWidth="1920.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1 " fx:controller="com.example.demofx.service.HelloControllernew">
+   <content>
+      <StackPane>
+         <children>
+            <TabPane prefHeight="1080.0" prefWidth="1920.0" tabClosingPolicy="UNAVAILABLE">
+              <tabs>
+                <Tab text="Нетопливные нужды">
+                  <content>
+                    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="1440.0" prefWidth="1920.0">
+                           <children>
+                              <TabPane layoutX="-17.0" layoutY="-86.0" prefHeight="1022.0" prefWidth="1920.0" tabClosingPolicy="UNAVAILABLE" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                <tabs>
+                                  <Tab text="Расчет расхода газа на продувку скважин">
+                                       <content>
+                                          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="1080.0" prefWidth="1920.0">
+                                             <children>
+                                                <Label layoutX="21.0" layoutY="30.0" text="Диаметр диафрагмы или штуцера" />
+                                                <Label layoutX="21.0" layoutY="60.0" text="Коэффициент, зависящий от типа измерителя, штуцера (Приложение Е Методики)" />
+                                                <Label layoutX="21.0" layoutY="90.0" text="Абсолютное давление перед пропускным отверстием (диафрагмой)" />
+                                                <Label layoutX="23.0" layoutY="120.0" text="Плотность газа (результаты ГКИ)" />
+                                                <Label layoutX="23.0" layoutY="150.0" text="Термодинамическая температура газа перед пропускным отверстием (диафрагмой)" />
+                                                <Label layoutX="23.0" layoutY="180.0" text="Глубина скважины" />
+                                                <Label layoutX="23.0" layoutY="210.0" text="Внутренний диаметр НКТ" />
+                                                <Label layoutX="24.0" layoutY="240.0" text="Абсолютное атмосферное давление" />
+                                                <Label layoutX="24.0" layoutY="270.0" text="Забойное давление" />
+                                                <Label layoutX="24.0" layoutY="300.0" text="Устьевое давление " />
+                                                <Label layoutX="24.0" layoutY="330.0" text="Количество продувок" />
+                                                <TextField fx:id="Ddiafget" layoutX="711.0" layoutY="30.0" />
+                                                <TextField fx:id="Cget" layoutX="708.0" layoutY="60.0" />
+                                                <TextField fx:id="Pnpget" layoutX="708.0" layoutY="90.0" />
+                                                <TextField fx:id="pGget" layoutX="708.0" layoutY="120.0" />
+                                                <TextField fx:id="Tget" layoutX="708.0" layoutY="150.0" />
+                                                <TextField fx:id="Lget" layoutX="708.0" layoutY="180.0" />
+                                                <TextField fx:id="dvnutrget" layoutX="708.0" layoutY="210.0" />
+                                                <TextField fx:id="patmget" layoutX="708.0" layoutY="240.0" />
+                                                <TextField fx:id="pzabget" layoutX="708.0" layoutY="270.0" />
+                                                <Label layoutX="900.0" layoutY="270.0" text="MPa" />
+                                                <Label layoutX="900.0" layoutY="90.0" text="kgf/cm²" />
+                                                <Label layoutX="900.0" layoutY="300.0" text="MPa" />
+                                                <Label layoutX="900.0" layoutY="150.0" text="K" />
+                                                <Label layoutX="900.0" layoutY="180.0" text="m" />
+                                                <Label layoutX="900.0" layoutY="210.0" text="mm" />
+                                                <Label layoutX="900.0" layoutY="30.0" text="mm" />
+                                                <Label layoutX="900.0" layoutY="240.0" text="MPa" />
+                                                <TextField fx:id="kolproduvget" layoutX="708.0" layoutY="330.0" minHeight="18.0" minWidth="152.0" prefHeight="18.0" prefWidth="152.0" />
+                                                <Label layoutX="397.0" layoutY="5.0" text="Расчет расхода газа на продувку скважин" />
+                                                <Label layoutX="327.0" layoutY="371.0" text="Расчёт расхода газа после капитального и подземного ремонта скважин " />
+                                                <Label layoutX="24.0" layoutY="400.0" text="Дебит продуваемой скважины по газу при заданных режимах" />
+                                                <Label layoutX="24.0" layoutY="430.0" text="Продолжительность продувки скважины при заданных режимах" />
+                                                <Label layoutX="24.0" layoutY="460.0" text="Количество продувок" />
+                                                <Label layoutX="24.0" layoutY="490.0" text="Количество скважин" />
+                                                <Label layoutX="900.0" layoutY="400.0" text="1*10³m³/d" />
+                                                <Label layoutX="900.0" layoutY="430.0" text="d" />
+                                                <Label layoutX="900.0" layoutY="490.0" text="ед." />
+                                                <TextField fx:id="debitskvget" layoutX="708.0" layoutY="400.0" />
+                                                <TextField fx:id="Trejget" layoutX="708.0" layoutY="430.0" />
+                                                <TextField fx:id="nproduvget" layoutX="708.0" layoutY="460.0" />
+                                                <TextField fx:id="Nskvajget" layoutX="708.0" layoutY="490.0" />
+                                                <Label layoutX="560.0" layoutY="540.0" text="Расчёт расхода газа при очистке после соляно-кислотной обработки скважин" />
+                                                <Label layoutX="24.0" layoutY="570.0" text="Дебит продуваемой скважины по газу при заданных режимах" />
+                                                <Label layoutX="24.0" layoutY="600.0" text="Продолжительность продувки скважины при заданных режимах" />
+                                                <Label layoutX="24.0" layoutY="630.0" text="Количество продувок" />
+                                                <Label layoutX="24.0" layoutY="660.0" text="Количество скважин" />
+                                                <Label layoutX="563.0" layoutY="700.0" text="Расчёт расхода газа после ингибирования скважин" />
+                                                <Label layoutX="24.0" layoutY="730.0" text="Дебит продуваемой скважины по газу при заданных режимах" />
+                                                <Label layoutX="24.0" layoutY="760.0" text="Продолжительность продувки скважины при заданных режимах" />
+                                                <Label layoutX="24.0" layoutY="790.0" text="Количество продувок" />
+                                                <Label layoutX="24.0" layoutY="820.0" text="Количество скважин" />
+                                                <TextField fx:id="debitskvkislobrget" layoutX="708.0" layoutY="570.0" />
+                                                <TextField fx:id="Trejkislobrget" layoutX="708.0" layoutY="600.0" />
+                                                <TextField fx:id="nproduvkislobrget" layoutX="708.0" layoutY="630.0" />
+                                                <TextField fx:id="nskavkislobrget" layoutX="708.0" layoutY="660.0" />
+                                                <TextField fx:id="qskvget" layoutX="708.0" layoutY="730.0" />
+                                                <TextField fx:id="tskvget" layoutX="708.0" layoutY="760.0" />
+                                                <TextField fx:id="nprget" layoutX="708.0" layoutY="790.0" />
+                                                <TextField fx:id="nskvget" layoutX="708.0" layoutY="820.0" />
+                                                <Label layoutX="900.0" layoutY="570.0" text="1*10³m³/d" />
+                                                <Label layoutX="900.0" layoutY="600.0" text="d" />
+                                                <Label layoutX="900.0" layoutY="660.0" text="ед." />
+                                                <Label layoutX="900.0" layoutY="730.0" text="1*10³m³/d" />
+                                                <Label layoutX="900.0" layoutY="760.0" text="d" />
+                                                <Label layoutX="900.0" layoutY="820.0" text="ед." />
+                                                <Label layoutX="1100.0" layoutY="30.0" text="Дебит продуваемой скважины по газу при заданных режимах" />
+                                                <Label layoutX="1100.0" layoutY="60.0" text="Продолжительность продувки скважины при заданных режимах" />
+                                                <Label layoutX="1100.0" layoutY="90.0" text="Количество продувок" />
+                                                <Label layoutX="1100.0" layoutY="120.0" text="Количество скважин" />
+                                                <TextField fx:id="debitlikvidget" layoutX="1540.0" layoutY="30.0" />
+                                                <TextField fx:id="Trejlikvidget" layoutX="1540.0" layoutY="60.0" />
+                                                <TextField fx:id="nproduvlikvidget" layoutX="1540.0" layoutY="90.0" />
+                                                <TextField fx:id="Nskvajlikvidget" layoutX="1540.0" layoutY="120.0" />
+                                                <Label layoutX="1740.0" layoutY="30.0" text="1*10³m³/d" />
+                                                <Label layoutX="1740.0" layoutY="60.0" text="d" />
+                                                <Label layoutX="1740.0" layoutY="120.0" text="ед." />
+                                                <TextField fx:id="pustget" layoutX="700.0" layoutY="300.0" />
+                                             </children>
+                                          </AnchorPane>
+                                       </content>
+                                  </Tab>
+                                  <Tab text="Расход газа при очистке газопровода">
+                                       <content>
+                                          <AnchorPane prefHeight="200.0" prefWidth="200.0">
+                                             <children>
+                                                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                                                   <children>
+                                                      <Label layoutX="397.0" layoutY="5.0" text="Расчёт расхода газа при продувке после ингибирования газопроводов" />
+                                                      <Label layoutX="21.0" layoutY="30.0" text="Диаметр газопровода" />
+                                                      <Label layoutX="21.0" layoutY="60.0" text="Толщина стенки газопровода" />
+                                                      <Label layoutX="21.0" layoutY="90.0" text="Абсолютное рабочее давление в газопроводе" />
+                                                      <Label layoutX="21.0" layoutY="120.0" text="Рабочая термодинамическая температура газа в газопроводе" />
+                                                      <Label layoutX="21.0" layoutY="150.0" text="Плотность газа (результаты ГКИ)" />
+                                                      <Label layoutX="21.0" layoutY="180.0" text="Диаметр продувочной задвижки" />
+                                                      <Label layoutX="21.0" layoutY="210.0" text="Время продувки" />
+                                                      <Label layoutX="21.0" layoutY="240.0" text="Количество продуваемых газопроводов" />
+                                                      <Label layoutX="21.0" layoutY="270.0" text="Количество продувок газопровода" />
+                                                      <TextField fx:id="Dgazpget" layoutX="711.0" layoutY="30.0" />
+                                                      <TextField fx:id="tolshstenkiget" layoutX="711.0" layoutY="60.0" />
+                                                      <TextField fx:id="Pgazprovodget" layoutX="711.0" layoutY="90.0" />
+                                                      <TextField fx:id="Tgazprovodget" layoutX="711.0" layoutY="120.0" />
+                                                      <TextField fx:id="plotnostgazaget" layoutX="711.0" layoutY="150.0" />
+                                                      <TextField fx:id="Dproduvzadget" layoutX="711.0" layoutY="180.0" />
+                                                      <TextField fx:id="Tproduvgazget" layoutX="711.0" layoutY="210.0" />
+                                                      <TextField fx:id="mproduvgazget" layoutX="711.0" layoutY="240.0" />
+                                                      <TextField fx:id="nproduvgazget" layoutX="711.0" layoutY="270.0" />
+                                                      <Label layoutX="900.0" layoutY="30.0" text="mm" />
+                                                      <Label layoutX="900.0" layoutY="60.0" text="mm" />
+                                                      <Label layoutX="900.0" layoutY="90.0" text="kgf/сm²" />
+                                                      <Label layoutX="900.0" layoutY="120.0" text="К" />
+                                                      <Label layoutX="900.0" layoutY="150.0" text="kg/m³" />
+                                                      <Label layoutX="900.0" layoutY="180.0" text="mm" />
+                                                      <Label layoutX="900.0" layoutY="210.0" text="s" />
+                                                      <Label layoutX="586.0" layoutY="380.0" text="Расчёт расхода газа при очистке газопроводов от жидкости путем продувки" />
+                                                      <Label layoutX="21.0" layoutY="400.0" text="Диаметр газопровода" />
+                                                      <Label layoutX="21.0" layoutY="430.0" text="Толщина стенки газопровода" />
+                                                      <Label layoutX="21.0" layoutY="460.0" text="Абсолютное рабочее давление в газопроводе" />
+                                                      <Label layoutX="21.0" layoutY="490.0" text="Рабочая термодинамическая температура газа в газопроводе" />
+                                                      <Label layoutX="21.0" layoutY="520.0" text="Плотность газа (результаты ГКИ)" />
+                                                      <Label layoutX="21.0" layoutY="550.0" text="Диаметр продувочной задвижки" />
+                                                      <Label layoutX="21.0" layoutY="580.0" text="Время продувки" />
+                                                      <Label layoutX="21.0" layoutY="610.0" text="Количество продуваемых газопроводов" />
+                                                      <Label layoutX="21.0" layoutY="640.0" text="Количество продувок газопровода" />
+                                                      <TextField fx:id="diamgazget" layoutX="711.0" layoutY="400.0" />
+                                                      <TextField fx:id="tolshstenki2get" layoutX="711.0" layoutY="430.0" />
+                                                      <TextField fx:id="Pgazprovodjidget" layoutX="711.0" layoutY="460.0" />
+                                                      <TextField fx:id="Tgazprovodjidget" layoutX="711.0" layoutY="490.0" />
+                                                      <TextField fx:id="plotnostgazajidget" layoutX="711.0" layoutY="520.0" />
+                                                      <TextField fx:id="Dproduvzadjidget" layoutX="711.0" layoutY="550.0" />
+                                                      <TextField fx:id="Tproduvgazjidget" layoutX="711.0" layoutY="580.0" />
+                                                      <TextField fx:id="mproduvgazjidget" layoutX="711.0" layoutY="610.0" />
+                                                      <TextField fx:id="nproduvgazjidget" layoutX="711.0" layoutY="640.0" />
+                                                      <Label layoutX="900.0" layoutY="400.0" text="mm" />
+                                                      <Label layoutX="900.0" layoutY="430.0" text="mm" />
+                                                      <Label layoutX="900.0" layoutY="460.0" text="kgf/сm²" />
+                                                      <Label layoutX="900.0" layoutY="490.0" text="К" />
+                                                      <Label layoutX="900.0" layoutY="520.0" text="kg/m³" />
+                                                      <Label layoutX="900.0" layoutY="550.0" text="mm" />
+                                                      <Label layoutX="900.0" layoutY="580.0" text="s" />
+                                                   </children>
+                                                </AnchorPane>
+                                             </children>
+                                          </AnchorPane>
+                                       </content>
+                                  </Tab>
+                                    <Tab text="Расход газа при ремонте">
+                                      <content>
+                                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                                             <children>
+                                                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                                                   <children>
+                                                      <Label layoutX="900.0" layoutY="30.0" text="m³" />
+                                                      <Label layoutX="21.0" layoutY="30.0" text="Геометрический объемоборудования или участка трубопровода, из которых стравливается газ" />
+                                                      <Label layoutX="21.0" layoutY="60.0" text="Абсолютное рабочее давление в газопроводе" />
+                                                      <Label layoutX="21.0" layoutY="90.0" text="Рабочая термодинамическая температура газа в газопроводе" />
+                                                      <Label layoutX="21.0" layoutY="120.0" text="Плотность газа (результаты ГКИ)" />
+                                                      <Label layoutX="21.0" layoutY="180.0" text="Количество единиц однотипного оборудования" />
+                                                      <Label layoutX="397.0" layoutY="5.0" text="Расчёт расхода газа при стравливании газа перед проведением ремонтных работ" />
+                                                      <Label layoutX="900.0" layoutY="60.0" text="kgf/сm²" />
+                                                      <Label layoutX="900.0" layoutY="90.0" text="К" />
+                                                      <Label layoutX="900.0" layoutY="120.0" text="kg/m³" />
+                                                      <TextField fx:id="Vremontget" layoutX="711.0" layoutY="30.0" />
+                                                      <TextField fx:id="Pgazremontget" layoutX="711.0" layoutY="60.0" />
+                                                      <TextField fx:id="Tgazremontget" layoutX="711.0" layoutY="90.0" />
+                                                      <TextField fx:id="plotnostgazremontget" layoutX="711.0" layoutY="120.0" />
+                                                      <TextField fx:id="nremontget" layoutX="711.0" layoutY="180.0" />
+                                                      <Label layoutX="415.0" layoutY="250.0" text="Расчёт расхода газа при продувке оборудования" />
+                                                      <Label layoutX="21.0" layoutY="290.0" text="Диаметр продувочной задвижки" />
+                                                      <Label layoutX="21.0" layoutY="320.0" text="Абсолютное рабочее давление газа перед сечением трубы, через которое производится продувка" />
+                                                      <Label layoutX="21.0" layoutY="350.0" text="Время продувки при некритическом истечении" />
+                                                      <Label layoutX="21.0" layoutY="380.0" text="Время продувки при критическом истечении" />
+                                                      <Label layoutX="900.0" layoutY="290.0" text="mm" />
+                                                      <Label layoutX="900.0" layoutY="320.0" text="kgf/сm²" />
+                                                      <Label layoutX="900.0" layoutY="350.0" text="s" />
+                                                      <Label layoutX="900.0" layoutY="380.0" text="s" />
+                                                      <TextField fx:id="dzadremontget" layoutX="711.0" layoutY="290.0" />
+                                                      <TextField fx:id="Pabsremontget" layoutX="711.0" layoutY="320.0" />
+                                                      <TextField fx:id="Tproduvremontget" layoutX="711.0" layoutY="350.0" />
+                                                      <TextField fx:id="Tkpremontget" layoutX="711.0" layoutY="380.0" />
+                                                   </children>
+                                                </AnchorPane>
+                                             </children>
+                                          </AnchorPane>
+                                      </content>
+                                    </Tab>
+                                    <Tab text="Расчет расхода газа при дегазации газового конденсата">
+                                      <content>
+                                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                                             <children>
+                                                <Label layoutX="21.0" layoutY="60.0" text="Расчет расхода газа при дегазации ДЭГ" />
+                                                <Label layoutX="21.0" layoutY="90.0" text="Газовый фактор, количество газа дегазации, выделяющегося при получение 1 m³ конденсата (результаты ГКИ)" />
+                                                <Label layoutX="1100.0" layoutY="60.0" text="t" />
+                                                <Label layoutX="1100.0" layoutY="90.0" text="t/m3" />
+                                                <TextField fx:id="qstkondget" layoutX="900.0" layoutY="60.0" />
+                                                <TextField fx:id="Nkolget" layoutX="900.0" layoutY="90.0" />
+                                             </children>
+                                          </AnchorPane>
+                                      </content>
+                                    </Tab>
+                                    <Tab text="Расчет расхода газа при дегазации пластовой воды">
+                                      <content>
+                                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                                             <children>
+                                                <Label layoutX="21.0" layoutY="60.0" text="Общий объем сырьевого газа, подаваемого на УКПГ &quot;Алан&quot; " />
+                                                <Label layoutX="21.0" layoutY="90.0" text="Удельное содержание воды в объеме добытого газа" />
+                                                <Label layoutX="21.0" layoutY="120.0" text="Растворимость газа в дистиллированной воде, определяемая по таблице Н.1 Методики" />
+                                                <Label layoutX="21.0" layoutY="150.0" text="Коэффициент Сеченова, определяемый по таблице Н.2 Методики" />
+                                                <Label layoutX="21.0" layoutY="180.0" text="Концентрация солей в воде (лабораторные исследования)" />
+                                                <Label layoutX="900.0" layoutY="60.0" text="1·106 m3" />
+                                                <Label layoutX="900.0" layoutY="90.0" text="m³/m3" />
+                                                <Label layoutX="900.0" layoutY="120.0" text="m³/m3" />
+                                                <Label layoutX="900.0" layoutY="180.0" text="g-экв/dm³" />
+                                                <TextField fx:id="vobshukpgget" layoutX="700.0" layoutY="60.0" />
+                                                <TextField fx:id="qbget" layoutX="700.0" layoutY="90.0" />
+                                                <TextField fx:id="rdbget" layoutX="700.0" layoutY="120.0" />
+                                                <TextField fx:id="kget" layoutX="700.0" layoutY="150.0" />
+                                                <TextField fx:id="cget" layoutX="700.0" layoutY="180.0" />
+                                             </children>
+                                          </AnchorPane>
+                                      </content>
+                                    </Tab>
+                                    <Tab text="Расчет расхода газа при дегазации ДЭГ">
+                                      <content>
+                                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                                             <children>
+                                                <TextField fx:id="vobshukpg1get" layoutX="800.0" layoutY="60.0" />
+                                                <TextField fx:id="Udegget" layoutX="800.0" layoutY="90.0" />
+                                                <TextField fx:id="Pdegget" layoutX="800.0" layoutY="120.0" />
+                                                <TextField fx:id="Tdegget" layoutX="800.0" layoutY="150.0" />
+                                                <TextField fx:id="Cdegget" layoutX="800.0" layoutY="180.0" />
+                                                <TextField fx:id="konsdegget" layoutX="800.0" layoutY="210.0" />
+                                                <Label layoutX="21.0" layoutY="60.0" text="Объем газа, обрабатываемого ДЭГ" />
+                                                <Label layoutX="21.0" layoutY="90.0" text="Удельный объем вспрыскиваемого регенерируемого ДЭГ (принимается в соответствии с данными цеха УНТС)" />
+                                                <Label layoutX="21.0" layoutY="120.0" text="Удельное содержание воды в объеме добытого газа " />
+                                                <Label layoutX="21.0" layoutY="150.0" text="Рабочее давление" />
+                                                <Label layoutX="21.0" layoutY="180.0" text="Рабочая температура" />
+                                                <Label layoutX="21.0" layoutY="210.0" text="Концентрация ДЭГ" />
+                                                <Label layoutX="1000.0" layoutY="60.0" text="1·106 m3" />
+                                                <Label layoutX="1000.0" layoutY="90.0" text="m³/1·103 m3" />
+                                                <Label layoutX="1000.0" layoutY="120.0" text="m³/1·103 m3" />
+                                                <Label layoutX="1000.0" layoutY="150.0" text="kgf/сm²" />
+                                                <Label layoutX="1000.0" layoutY="180.0" text="°С" />
+                                                <Label layoutX="1000.0" layoutY="210.0" text="\% масс." />
+                                             </children>
+                                          </AnchorPane>
+                                      </content>
+                                    </Tab>
+                                </tabs>
+                              </TabPane>
+                           </children>
+                        </AnchorPane>
+                  </content>
+                </Tab>
+                  <Tab text="Топливные нужды">
+                    <content>
+                      <AnchorPane minHeight="0.0" minWidth="0.0">
+                           <children>
+                              <Label layoutX="21.0" layoutY="40.0" text="Расход топливного газа на агрегаты ДКС (принимается по показаниям прибора учета)" />
+                              <Label layoutX="21.0" layoutY="70.0" text="Расход топливного газа на работу БПГР ДКС (принимается по паспортным данным)" />
+                              <Label layoutX="21.0" layoutY="100.0" text="Расход топливного газа факельную систему (принимается по показаниям прибора учета)" />
+                              <Label layoutX="400.0" layoutY="14.0" text=" Расчет расхода топливного газа компрессоры ДКС ГКМ Алан" />
+                              <Label layoutX="1000.0" layoutY="40.0" text=" 1·10³ m³" />
+                              <Label layoutX="1000.0" layoutY="70.0" text=" 1·10³ m³" />
+                              <Label layoutX="1000.0" layoutY="100.0" text=" 1·10³ m³" />
+                              <Label layoutX="400.0" layoutY="150.0" text="Расчет расхода топливного газа на работу огневых регенераторов " />
+                              <Label layoutX="21.0" layoutY="180.0" text="Расход топливного газа огневыми регенераторами ДЭГ (принимается по показаниям прибора учета)" />
+                              <Label layoutX="208.0" layoutY="220.0" text=" Расчет расхода топливного газа на работу котельной" />
+                              <Label layoutX="21.0" layoutY="250.0" text="Расход топливного газа на рабоу котельной ДКС (принимается по показаниям прибора учета)" />
+                              <Label layoutX="21.0" layoutY="280.0" text="Расход топливного газа на рабоу котельной УКПГ (принимается по показаниям прибора учета)" />
+                              <Label layoutX="400.0" layoutY="320.0" text="Расчет расхода топливного газа на поддержание дежурного огня" />
+                              <Label layoutX="21.0" layoutY="350.0" text="Расход  газа на факел при аварийном останове промысла ДКС (принимается по показаниям прибора учета)" />
+                              <Label layoutX="21.0" layoutY="380.0" text="Расход  газа на факел при аварийном останове промысла УКПГ (принимается по показаниям прибора учета)" />
+                              <Label layoutX="1000.0" layoutY="180.0" text=" 1·10³ m³" />
+                              <Label layoutX="1000.0" layoutY="250.0" text=" 1·10³ m³" />
+                              <Label layoutX="1000.0" layoutY="280.0" text=" 1·10³ m³" />
+                              <Label layoutX="1000.0" layoutY="350.0" text=" 1·10³ m³" />
+                              <Label layoutX="1000.0" layoutY="380.0" text=" 1·10³ m³" />
+                              <TextField fx:id="rash71get" layoutX="800.0" layoutY="40.0" />
+                              <TextField fx:id="rash72get" layoutX="800.0" layoutY="70.0" />
+                              <TextField fx:id="rash73get" layoutX="800.0" layoutY="100.0" />
+                              <TextField fx:id="Qdeg8get" layoutX="800.0" layoutY="180.0" />
+                              <TextField fx:id="Qkoteldkcget" layoutX="800.0" layoutY="250.0" />
+                              <TextField fx:id="Qkotelukpgget" layoutX="800.0" layoutY="280.0" />
+                              <TextField fx:id="Qfakeldkcget" layoutX="800.0" layoutY="350.0" />
+                              <TextField fx:id="Qfakelukpgget" layoutX="800.0" layoutY="380.0" />
+                           </children>
+                        </AnchorPane>
+                    </content>
+                  </Tab>
+                  <Tab text="Технологические потери газа">
+                    <content>
+                      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                           <children>
+                              <Label layoutX="400.0" layoutY="20.0" text="Запорно-регулирующая арматура (ЗРА)" />
+                              <Label layoutX="21.0" layoutY="50.0" text="Расчетная величина утечек (Приложение Q Методики)" />
+                              <Label layoutX="21.0" layoutY="80.0" text="Продолжительность работы единицы арматуры за анализируемый период" />
+                              <Label layoutX="21.0" layoutY="110.0" text="Коэффициент, характеризующий долю уплотнений, потерявших герметичность (Приложение Q Методики)" />
+                              <Label layoutX="21.0" layoutY="140.0" text="Количество единиц ЗРА" />
+                              <Label layoutX="21.0" layoutY="170.0" text="Плотность газа при стандартных условиях за анализируемый период (результаты ГКИ)" />
+                              <Label layoutX="400.0" layoutY="200.0" text="Предохранительные клапана (КП)" />
+                              <Label layoutX="21.0" layoutY="230.0" text="Расчетная величина утечек (Приложение Q Методики)" />
+                              <Label layoutX="21.0" layoutY="260.0" text="Продолжительность работы единицы арматуры за анализируемый период" />
+                              <Label layoutX="21.0" layoutY="290.0" text="Коэффициент, характеризующий долю уплотнений, потерявших герметичность (Приложение Q Методики)" />
+                              <Label layoutX="21.0" layoutY="320.0" text="Количество единиц ЗРА" />
+                              <Label layoutX="21.0" layoutY="350.0" text="Плотность газа при стандартных условиях за анализируемый период (результаты ГКИ)" />
+                              <Label layoutX="400.0" layoutY="380.0" text="Фланцы" />
+                              <Label layoutX="21.0" layoutY="410.0" text="Расчетная величина утечек (Приложение Q Методики)" />
+                              <Label layoutX="21.0" layoutY="440.0" text="Продолжительность работы единицы арматуры за анализируемый период" />
+                              <Label layoutX="21.0" layoutY="470.0" text="Коэффициент, характеризующий долю уплотнений, потерявших герметичность (Приложение Q Методики)" />
+                              <Label layoutX="21.0" layoutY="510.0" text="Количество единиц ЗРА" />
+                              <Label layoutX="21.0" layoutY="540.0" text="Количество фланцев на одном ЗРА" />
+                              <Label layoutX="21.0" layoutY="570.0" text="Плотность газа при стандартных условиях за анализируемый период (результаты ГКИ)" />
+                              <Label layoutX="800.0" layoutY="50.0" text="kg/h" />
+                              <Label layoutX="800.0" layoutY="80.0" text="h" />
+                              <Label layoutX="800.0" layoutY="110.0" text="\%" />
+                              <Label layoutX="800.0" layoutY="140.0" text="ед." />
+                              <Label layoutX="800.0" layoutY="170.0" text="kg/m³" />
+                              <Label layoutX="800.0" layoutY="230.0" text="kg/h" />
+                              <Label layoutX="800.0" layoutY="260.0" text="h" />
+                              <Label layoutX="800.0" layoutY="290.0" text="\%" />
+                              <Label layoutX="800.0" layoutY="320.0" text="ед." />
+                              <Label layoutX="800.0" layoutY="350.0" text="kg/m³" />
+                              <Label layoutX="800.0" layoutY="410.0" text="kg/h" />
+                              <Label layoutX="800.0" layoutY="440.0" text="h" />
+                              <Label layoutX="800.0" layoutY="470.0" text="\%" />
+                              <Label layoutX="800.0" layoutY="510.0" text="ед." />
+                              <Label layoutX="800.0" layoutY="540.0" text="ед." />
+                              <Label layoutX="800.0" layoutY="570.0" text="kg/m³" />
+                              <Label layoutX="918.0" layoutY="21.0" text="Label" />
+                              <Label layoutX="1049.0" layoutY="21.0" text="Label" />
+                              <Label layoutX="1190.0" layoutY="22.0" text="Label" />
+                              <TextField fx:id="qutechukpgget" layoutX="860.0" layoutY="50.0" maxWidth="100.0" />
+                              <TextField fx:id="qutechukpg1get" layoutX="1000.0" layoutY="50.0" maxWidth="100.0" />
+                              <TextField fx:id="qutechukpg2get" layoutX="1150.0" layoutY="50.0" maxWidth="100.0" />
+                              <TextField fx:id="tukpgget" layoutX="860.0" layoutY="80.0" maxWidth="100.0" />
+                              <TextField fx:id="yukpgget" layoutX="860.0" layoutY="110.0" maxWidth="100.0" />
+                              <TextField fx:id="pgukpgget" layoutX="860.0" layoutY="170.0" maxWidth="100.0" />
+                              <TextField fx:id="nukpgget" layoutX="860.0" layoutY="140.0" maxWidth="100.0" />
+                              <TextField fx:id="qutechgpget" layoutX="860.0" layoutY="230.0" maxWidth="100.0" />
+                              <TextField fx:id="tgpget" layoutX="860.0" layoutY="260.0" maxWidth="100.0" />
+                              <TextField fx:id="ngpget" layoutX="862.0" layoutY="320.0" maxWidth="100.0" />
+                              <TextField fx:id="ugpget" layoutX="860.0" layoutY="290.0" maxWidth="100.0" />
+                              <TextField fx:id="pggpget" layoutX="860.0" layoutY="350.0" maxWidth="100.0" />
+                              <TextField fx:id="qutechdkcget" layoutX="860.0" layoutY="410.0" maxWidth="100.0" />
+                              <TextField fx:id="tdkcget" layoutX="860.0" layoutY="440.0" maxWidth="100.0" />
+                              <TextField fx:id="udkcget" layoutX="860.0" layoutY="470.0" maxWidth="100.0" />
+                              <TextField fx:id="ndkcget" layoutX="860.0" layoutY="510.0" maxWidth="100.0" />
+                              <TextField fx:id="pgdkcget" layoutX="860.0" layoutY="540.0" maxWidth="100.0" />
+                              <TextField fx:id="plotnostkcget" layoutX="860.0" layoutY="570.0" maxWidth="100.0" />
+                              <TextField fx:id="tukpg1get" layoutX="1000.0" layoutY="80.0" maxWidth="100.0" />
+                              <TextField fx:id="yukpg1get" layoutX="1000.0" layoutY="110.0" maxWidth="100.0" />
+                              <TextField fx:id="nukpg1get" layoutX="1000.0" layoutY="140.0" maxWidth="100.0" />
+                              <TextField fx:id="pgukpg1get" layoutX="1000.0" layoutY="170.0" maxWidth="100.0" />
+                              <TextField fx:id="qutechgp1get" layoutX="1000.0" layoutY="230.0" maxWidth="100.0" />
+                              <TextField fx:id="tgp1get" layoutX="1000.0" layoutY="260.0" maxWidth="100.0" />
+                              <TextField fx:id="ugp1get" layoutX="1000.0" layoutY="290.0" maxWidth="100.0" />
+                              <TextField fx:id="ngp1get" layoutX="1000.0" layoutY="320.0" maxWidth="100.0" />
+                              <TextField fx:id="pggp1get" layoutX="1000.0" layoutY="350.0" maxWidth="100.0" />
+                              <TextField fx:id="qutechdkc1get" layoutX="1000.0" layoutY="410.0" maxWidth="100.0" />
+                              <TextField fx:id="tdkc1get" layoutX="1000.0" layoutY="440.0" maxWidth="100.0" />
+                              <TextField fx:id="udkc1get" layoutX="1000.0" layoutY="470.0" maxWidth="100.0" />
+                              <TextField fx:id="ndkc1get" layoutX="1000.0" layoutY="510.0" maxWidth="100.0" />
+                              <TextField fx:id="pgdkc1get" layoutX="1000.0" layoutY="540.0" maxWidth="100.0" />
+                              <TextField fx:id="plotnostkc1get" layoutX="1000.0" layoutY="570.0" maxWidth="100.0" />
+                              <TextField fx:id="tukpg2get" layoutX="1150.0" layoutY="80.0" maxWidth="100.0" />
+                              <TextField fx:id="yukpg2get" layoutX="1150.0" layoutY="110.0" maxWidth="100.0" />
+                              <TextField fx:id="nukpg2get" layoutX="1150.0" layoutY="140.0" maxWidth="100.0" />
+                              <TextField fx:id="pgukpg2get" layoutX="1150.0" layoutY="170.0" maxWidth="100.0" />
+                              <TextField fx:id="qutechgp2get" layoutX="1150.0" layoutY="230.0" maxWidth="100.0" />
+                              <TextField fx:id="tgp2get" layoutX="1150.0" layoutY="260.0" maxWidth="100.0" />
+                              <TextField fx:id="ugp2get" layoutX="1150.0" layoutY="290.0" maxWidth="100.0" />
+                              <TextField layoutX="1150.0" layoutY="320.0" maxWidth="100.0" />
+                              <TextField fx:id="ngp2get" layoutX="1150.0" layoutY="320.0" maxWidth="100.0" />
+                              <TextField fx:id="pggp2get" layoutX="1150.0" layoutY="350.0" maxWidth="100.0" />
+                              <TextField fx:id="qutechdkc2get" layoutX="1150.0" layoutY="410.0" maxWidth="100.0" />
+                              <TextField fx:id="tdkc2get" layoutX="1150.0" layoutY="440.0" maxWidth="100.0" />
+                              <TextField fx:id="udkc2get" layoutX="1150.0" layoutY="470.0" maxWidth="100.0" />
+                              <TextField fx:id="ndkc2get" layoutX="1150.0" layoutY="510.0" maxWidth="100.0" />
+                              <TextField fx:id="pgdkc2get" layoutX="1150.0" layoutY="540.0" maxWidth="100.0" />
+                              <TextField fx:id="plotnostkc2get" layoutX="1150.0" layoutY="570.0" maxWidth="100.0" />
+                           </children></AnchorPane>
+                    </content>
+                  </Tab>
+                  <Tab text="Расчет расхода (оседание) газа на производство продукции">
+                    <content>
+                      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                           <children>
+                              <Label layoutX="21.0" layoutY="60.0" text="Количество извлеченной воды  " />
+                              <Label layoutX="21.0" layoutY="90.0" text="Молеклярная масса воды" />
+                              <Label layoutX="21.0" layoutY="120.0" text="Количество извлеченного нестабильного конденсата" />
+                              <Label layoutX="21.0" layoutY="150.0" text="Средняя молекулярная масса нестабильного конденсата (результаты ГКИ)" />
+                              <Label layoutX="900.0" layoutY="60.0" text="t" />
+                              <Label layoutX="900.0" layoutY="90.0" text="kg/kmol" />
+                              <Label layoutX="900.0" layoutY="120.0" text="t" />
+                              <Label layoutX="900.0" layoutY="150.0" text="kg/kmol" />
+                              <TextField fx:id="Gvodiget" layoutX="700.0" layoutY="60.0" />
+                              <TextField fx:id="MH2Oget" layoutX="700.0" layoutY="90.0" />
+                              <TextField fx:id="Gnestkondget" layoutX="700.0" layoutY="120.0" />
+                              <TextField fx:id="Mnestkondget" layoutX="700.0" layoutY="150.0" />
+                           </children>
+                        </AnchorPane>
+                    </content>
+                  </Tab>
+                  <Tab text="СНИП">
+                    <content>
+                      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                           <children>
+                              <Label layoutX="50.0" layoutY="19.0" text="Наименование показателя">
+                                 <font>
+                                    <Font name="System Bold" size="18.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="50.0" layoutY="49.0" text="Объем газа, подаваемого на УКПГ «Алан»" />
+                              <Label layoutX="50.0" layoutY="74.0" text="СНиП, всего" />
+                              <Label layoutX="50.0" layoutY="99.0" text="Технологические нетопливные нужды, в том числе:" />
+                              <Label layoutX="50.0" layoutY="124.0" text="Расход газа на продувку скважин (согласно NGH 39.2-66:2009)" />
+                              <Label layoutX="50.0" layoutY="149.0" text="Расход газа при продувке после ингибирования и очистки газопроводов (согласно NGH 39.2-66:2009)" />
+                              <Label layoutX="50.0" layoutY="174.0" text="Расход газа при ремонте (согласно NGH 39.2-66:2009)" />
+                              <Label layoutX="50.0" layoutY="199.0" text="Расход газа при дегазации конденсата (согласно NGH 39.2-66:2009)" />
+                              <Label layoutX="50.0" layoutY="224.0" text="Расход газа при дегазации пластовой воды (согласно NGH 39.2-66:2009)" />
+                              <Label layoutX="50.0" layoutY="249.0" text="Расход газа при регенерации ДЭГ (согласно NGH 39.2-66:2009)" />
+                              <Label layoutX="50.0" layoutY="274.0" text="Технологические топливные нужды,  в том числе:" />
+                              <Label layoutX="50.0" layoutY="299.0" text="Расход топливного газа на агрегаты ДКС-1 (показания прибора)" />
+                              <Label layoutX="50.0" layoutY="324.0" text="Расход топливного газа на работу БПГР ДКС (по паспортным данным)" />
+                              <Label layoutX="50.0" layoutY="349.0" text="Расход топливного газа на работу огневых регенераторов (показания прибора)" />
+                              <Label layoutX="50.0" layoutY="374.0" text="Расход газа на котельная ДКС (показания прибора)" />
+                              <Label layoutX="50.0" layoutY="399.0" text="Расход топливного газа на работу котельной УКПГ (показания прибора)" />
+                              <Label layoutX="50.0" layoutY="424.0" text="Расход газа на факельную систему ДКС (показания прибора)" />
+                              <Label layoutX="50.0" layoutY="449.0" text="Расход газа на факел УКПГ (показания прибора)" />
+                              <Label layoutX="50.0" layoutY="474.0" text="Технологические потери (утечки), в том числе:" />
+                              <Label layoutX="50.0" layoutY="499.0" text="Технологически потери газа на УКПГ (согласно NGH 39.2-66:2009)" />
+                              <Label layoutX="50.0" layoutY="524.0" text="Технологически потери газа на газопроводе Алан-МГПЗ (согласно NGH 39.2-66:2009)" />
+                              <Label layoutX="50.0" layoutY="549.0" text="Технологически потери газа на ДКС (согласно NGH 39.2-66:2009)" />
+                              <Label layoutX="50.0" layoutY="574.0" text="Расход (оседание) газа, в том числе:" />
+                              <Label layoutX="50.0" layoutY="599.0" text="Расход (оседание) газа с извлечением влаги (согласно NGH 39.0-245:2021)" />
+                              <Label layoutX="50.0" layoutY="624.0" text="Расход (оседание) газа на производство нестабильного конденсата (согласно NGH 39.0-245:2021)" />
+                              <Label layoutX="50.0" layoutY="649.0" text="СНиП+оседание всего">
+                                 <font>
+                                    <Font name="System Bold" size="12.0" />
+                                 </font>
+                              </Label>
+                              <TextField fx:id="Snipobgres" layoutX="900.0" layoutY="46.0" prefHeight="25.0" prefWidth="67.0" />
+                              <TextField fx:id="Snipallres" layoutX="900.0" layoutY="70.0" prefHeight="25.0" prefWidth="67.0" />
+                              <TextField fx:id="Snipallobres" layoutX="1050.0" layoutY="70.0" prefHeight="25.0" prefWidth="67.0" />
+                              <TextField fx:id="Sniptechnujdres" layoutX="900.0" layoutY="95.0" prefHeight="25.0" prefWidth="67.0" />
+                              <TextField fx:id="Sniptechnujdobres" layoutX="1050.0" layoutY="95.0" prefHeight="25.0" prefWidth="67.0" />
+                              <TextField fx:id="Snip11res" layoutX="900.0" layoutY="120.0" prefHeight="25.0" prefWidth="67.0" />
+                              <TextField fx:id="Snip11obres" layoutX="1050.0" layoutY="120.0" prefHeight="25.0" prefWidth="67.0" />
+                              <TextField fx:id="Snip12res" layoutX="900.0" layoutY="145.0" prefHeight="25.0" prefWidth="67.0" />
+                              <TextField fx:id="Snip12obres" layoutX="1050.0" layoutY="145.0" prefHeight="25.0" prefWidth="67.0" />
+                              <TextField fx:id="Snip13res" layoutX="900.0" layoutY="170.0" prefHeight="25.0" prefWidth="67.0" />
+                              <TextField fx:id="Snip13obres" layoutX="1050.0" layoutY="170.0" prefHeight="25.0" prefWidth="67.0" />
+                              <TextField fx:id="Snip14res" layoutX="900.0" layoutY="195.0" prefHeight="25.0" prefWidth="67.0" />
+                              <TextField fx:id="Snip14obres" layoutX="1050.0" layoutY="195.0" prefHeight="25.0" prefWidth="67.0" />
+                              <TextField fx:id="Snip15res" layoutX="900.0" layoutY="220.0" prefHeight="25.0" prefWidth="67.0" />
+                              <TextField fx:id="Snip15obres" layoutX="1050.0" layoutY="220.0" prefHeight="25.0" prefWidth="67.0" />
+                              <TextField fx:id="Snip16res" layoutX="900.0" layoutY="245.0" prefHeight="25.0" prefWidth="67.0" />
+                              <TextField fx:id="Snip16obres" layoutX="1050.0" layoutY="245.0" prefHeight="25.0" prefWidth="67.0" />
+                              <TextField fx:id="Sniptopnujdres" layoutX="900.0" layoutY="270.0" prefHeight="25.0" prefWidth="67.0" />
+                              <TextField fx:id="Sniptopnujdobres" layoutX="1050.0" layoutY="270.0" prefHeight="25.0" prefWidth="67.0" />
+                              <TextField fx:id="Snip21res" layoutX="900.0" layoutY="295.0" prefHeight="25.0" prefWidth="67.0" />
+                              <TextField fx:id="Snip21obres" layoutX="1050.0" layoutY="295.0" prefHeight="25.0" prefWidth="67.0" />
+                              <TextField fx:id="Snip22res" layoutX="900.0" layoutY="320.0" prefHeight="25.0" prefWidth="67.0" />
+                              <TextField fx:id="Snip22obres" layoutX="1050.0" layoutY="320.0" prefHeight="25.0" prefWidth="67.0" />
+                              <TextField fx:id="Snip23res" layoutX="900.0" layoutY="345.0" prefHeight="25.0" prefWidth="67.0" />
+                              <TextField fx:id="Snip23obres" layoutX="1050.0" layoutY="345.0" prefHeight="25.0" prefWidth="67.0" />
+                              <TextField fx:id="Snip24res" layoutX="900.0" layoutY="370.0" prefHeight="25.0" prefWidth="67.0" />
+                              <TextField fx:id="Snip24obres" layoutX="1050.0" layoutY="370.0" prefHeight="25.0" prefWidth="67.0" />
+                              <TextField fx:id="Snip25res" layoutX="900.0" layoutY="395.0" prefHeight="25.0" prefWidth="67.0" />
+                              <TextField fx:id="Snip25obres" layoutX="1050.0" layoutY="395.0" prefHeight="25.0" prefWidth="67.0" />
+                              <TextField fx:id="Snip26res" layoutX="900.0" layoutY="420.0" prefHeight="25.0" prefWidth="67.0" />
+                              <TextField fx:id="Snip26obres" layoutX="1050.0" layoutY="420.0" prefHeight="25.0" prefWidth="67.0" />
+                              <TextField fx:id="Snip27res" layoutX="900.0" layoutY="445.0" prefHeight="25.0" prefWidth="67.0" />
+                              <TextField fx:id="Snip27obres" layoutX="1050.0" layoutY="445.0" prefHeight="25.0" prefWidth="67.0" />
+                              <TextField fx:id="Snipoterres" layoutX="900.0" layoutY="470.0" prefHeight="25.0" prefWidth="67.0" />
+                              <TextField fx:id="Snipoterobres" layoutX="1050.0" layoutY="470.0" prefHeight="25.0" prefWidth="67.0" />
+                              <TextField fx:id="Snip31res" layoutX="900.0" layoutY="495.0" prefHeight="25.0" prefWidth="67.0" />
+                              <TextField fx:id="Snip31obres" layoutX="1050.0" layoutY="495.0" prefHeight="25.0" prefWidth="67.0" />
+                              <TextField fx:id="Snip32res" layoutX="900.0" layoutY="520.0" prefHeight="25.0" prefWidth="67.0" />
+                              <TextField fx:id="Snip32obres" layoutX="1050.0" layoutY="520.0" prefHeight="25.0" prefWidth="67.0" />
+                              <TextField fx:id="Snip33res" layoutX="900.0" layoutY="545.0" prefHeight="25.0" prefWidth="67.0" />
+                              <TextField fx:id="Snip33obres" layoutX="1050.0" layoutY="545.0" prefHeight="25.0" prefWidth="67.0" />
+                              <TextField fx:id="Sniposedres" layoutX="900.0" layoutY="570.0" prefHeight="25.0" prefWidth="67.0" />
+                              <TextField fx:id="Sniposedobres" layoutX="1050.0" layoutY="570.0" prefHeight="25.0" prefWidth="67.0" />
+                              <TextField fx:id="Snip41res" layoutX="900.0" layoutY="595.0" prefHeight="25.0" prefWidth="67.0" />
+                              <TextField fx:id="Snip41obres" layoutX="1050.0" layoutY="595.0" prefHeight="25.0" prefWidth="67.0" />
+                              <TextField fx:id="Snip42res" layoutX="900.0" layoutY="620.0" prefHeight="25.0" prefWidth="67.0" />
+                              <TextField fx:id="Snip42obres" layoutX="1050.0" layoutY="620.0" prefHeight="25.0" prefWidth="67.0" />
+                              <TextField fx:id="Sniposedallres" layoutX="900.0" layoutY="645.0" prefHeight="25.0" prefWidth="67.0" />
+                              <TextField fx:id="Sniposedallobres" layoutX="1050.0" layoutY="645.0" prefHeight="25.0" prefWidth="67.0" />
+                              <Label layoutX="891.0" layoutY="24.0" text="СНиП,     1·10³ m³" />
+                              <Label layoutX="1034.0" layoutY="24.0" text="\% от объема добычи" />
+                              <Button fx:id="button" layoutX="554.0" layoutY="761.0" onAction="#onButtonClick" prefHeight="41.0" prefWidth="299.0" text="Вычислить">
+                                 <font>
+                                    <Font size="18.0" />
+                                 </font>
+                              </Button>
+                              <Label layoutX="569.0" layoutY="715.0" text="Исполнитель:">
+                                 <font>
+                                    <Font size="18.0" />
+                                 </font>
+                              </Label>
+                              <TextField fx:id="justname" layoutX="704.0" layoutY="716.0" />
+                           </children>
+                        </AnchorPane>
+                    </content>
+                  </Tab>
+              </tabs>
+            </TabPane>
+         </children>
+      </StackPane>
+   </content>
+</ScrollPane>

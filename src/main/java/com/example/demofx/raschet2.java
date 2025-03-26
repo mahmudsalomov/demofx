@@ -275,8 +275,7 @@ public abstract class raschet2 extends Application {
         pust = num.nextDouble();
         System.out.print("Количество продувок");
         kolproduv = num.nextDouble();
-        System.out.print("Плотность сухого воздуха при 20 °С и 0,1 МРа (const)");
-        plotvoz = num.nextDouble();
+        plotvoz = 1.204;
  //1.1 Расчёт расхода газа для очистки забоя скважин в процессе освоения после бурения и испытания
         //Промежуточный расчет
         deltP = pG / plotvoz; //Относительная плотность по воздуху
@@ -367,10 +366,8 @@ public abstract class raschet2 extends Application {
         mproduvgaz = num.nextDouble();
         System.out.print("Количество продувок газопровода");
         nproduvgaz = num.nextDouble();
-        System.out.print("Исходная норма расхода газа на одну продувку оборудования при 20 °С и 0,1 МРа (const)");
-        Hisx = num.nextDouble();
-        System.out.print("Плотность сухого воздуха при 20 °С и 0,1 МРа (const)");
-        plotnostvoz = num.nextDouble();
+        Hisx = 2*55*Math.pow(50,2)*10/(864*(Math.sqrt(0.6*293*0.887)));
+        plotnostvoz = 1.204;
         //Промежуточный расчет
         otnosplotvoz= plotnostvoz/plotnostgaza; //Относительная плотность по воздуху
         System.out.println("Относительная плотность по воздуху"+otnosplotvoz);
@@ -414,10 +411,9 @@ public abstract class raschet2 extends Application {
         System.out.print("Количество продувок газопровода");
         nproduvgazjid = num.nextDouble();
         System.out.print("Исходная норма расхода газа на одну продувку оборудования при 20 °С и 0,1 МРа (const)");
-        Hisxjid = num.nextDouble();
+        Hisxjid = 2*55*Math.pow(50,2)*10/(864*(Math.sqrt(0.6*293*0.887)));
         //Промежуточный расчет
-        System.out.print("Плотность сухого воздуха при 20 °С и 0,1 МРа (const)");
-        plotnostvozjid = num.nextDouble();
+        plotnostvozjid = 1.204;
         otnosplotvozjid = plotnostgazajid/plotnostvozjid; //Относительная плотность по воздуху
         System.out.println("Относительная плотность по воздуху"+otnosplotvozjid);
         faktorsjgazajid = 1-((10.2*Pgazprovodjid/10-6)*(0.345/100*otnosplotvozjid-0.446/1000)+0.015)*(1.3-0.0144*(Tgazprovodjid-283.2));//Фактор сжимаемости природного газа
@@ -449,13 +445,12 @@ public abstract class raschet2 extends Application {
         Tgazremont = num.nextDouble();
         System.out.print("Плотность газа (результаты ГКИ)");
         plotnostgazremont = num.nextDouble();
-        System.out.print("Исходная норма расхода газа на стравливание одного m³ газа при 20 °С и 0,1 МРа (const)");
-        Hisxremont = num.nextDouble();
+        Hisxremont = 1*55*293/293/0.887/1;
         System.out.print("Количество единиц однотипного оборудования");
         nremont = num.nextDouble();
         //Промежуточный расчет
-        System.out.print("Плотность сухого воздуха при 20 °С и 0,1 МРа (const)");
-        plotnostvozremont = num.nextDouble();
+
+        plotnostvozremont = 1.2044;
         otnosplotnostremont = plotnostgazremont/plotnostvozremont; //Относительная плотность по воздуху
         System.out.println("Относительная плотность по воздуху"+otnosplotnostremont);
         faktorsjgazremont = (1-((10.2*Pgazremont/10-6)*(0.345/100*otnosplotnostremont-0.0446/1000)+0.015)*(1.3-0.0144*(Tgazremont-283.2))); //Фактор сжимаемости природного газа
