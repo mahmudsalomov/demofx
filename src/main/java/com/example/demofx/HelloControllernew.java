@@ -11,11 +11,9 @@ import org.apache.commons.io.FileUtils;
 import java.io.File;
 import java.io.IOException;
 import java.lang.String;
+import java.text.SimpleDateFormat;
 import java.time.LocalDate;
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
+import java.util.*;
 
 import static javafx.application.Application.launch;
 
@@ -1082,7 +1080,11 @@ public class HelloControllernew {
         Sniposedallobres.setText(String.valueOf(Sniposedallob));
         try {
             byte[] pdf = HTMLPrintUtil.printPdfReport("items_report.html", getTestData());
-            File file = new File("src/main/resources/print/goods.pdf");
+            SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd_HH-mm-ss");
+
+            String formattedDate = dateFormat.format(new Date());
+
+            File file = new File("goods_"+formattedDate+".pdf");
             if (!file.exists()) {
                 file.createNewFile();
             }

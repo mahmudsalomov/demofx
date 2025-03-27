@@ -2,12 +2,13 @@
 setlocal
 
 REM Define JavaFX module path
-set MODULE_PATH="C:\Users\d.tursunkhodjaev\.jdks\openjfx-17.0.8_windows-x64_bin-sdk\javafx-sdk-17.0.8\lib"
+set MODULE_PATH="openjfx-17.0.8_windows-x64_bin-sdk\javafx-sdk-17.0.8\lib"
+set LIB_PATH="libs\*"
 
 REM Define JavaFX modules
 set MODULES=javafx.controls,javafx.fxml
 
 REM Run the Java application
-java --module-path %MODULE_PATH% --add-modules %MODULES% -jar out\artifacts\demofx_jar\demofx.jar
+corretto-17.0.8.1\bin\java --module-path %MODULE_PATH% --add-modules %MODULES% -jar target\demofx-1.0-SNAPSHOT.jar
 
 endlocal
