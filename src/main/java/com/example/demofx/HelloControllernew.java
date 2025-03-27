@@ -19,19 +19,19 @@ import java.util.Map;
 
 import static javafx.application.Application.launch;
 
-public class HelloControllernew extends Application {
-    @Override
-    public void start(Stage stage) throws IOException {
-        FXMLLoader fxmlLoader = new FXMLLoader(HelloControllernew.class.getResource("newhello.fxml"));
-        Scene scene = new Scene(fxmlLoader.load(), 1000, 800);
-        stage.setTitle("Расчет Алан");
-        stage.setScene(scene);
-        stage.show();
-    }
-
-    public static void main(String[] args) {
-        launch();
-    }
+public class HelloControllernew {
+//    @Override
+//    public void start(Stage stage) throws IOException {
+//        FXMLLoader fxmlLoader = new FXMLLoader(HelloControllernew.class.getResource("newhello.fxml"));
+//        Scene scene = new Scene(fxmlLoader.load(), 1000, 800);
+//        stage.setTitle("Расчет Алан");
+//        stage.setScene(scene);
+//        stage.show();
+//    }
+//
+//    public static void main(String[] args) {
+//        launch();
+//    }
 
     //    @FXML
 //    private Label button;
